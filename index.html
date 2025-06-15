@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fire Pump System Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<button id="menuToggle" aria-label="Toggle Navigation">☰ Menu</button>
+  <!-- Sidebar Navigation -->
+<div class="main-wrapper">
+  <nav id="sidebar">
+    <h2>Contents</h2>
+    <ul>
+      <!-- List links to all 21 sections -->
+      <li><a href="#section1">1. Introduction</a></li>
+      <li><a href="#section2">2. Types of Fire Pumps</a></li>
+      <li><a href="#section3">3. Key Components</a></li>
+      <li><a href="#section4">4. Working Principle</a></li>
+      <li><a href="#section5">5. Power Sources</a></li>
+      <li><a href="#section6">6. Standards & Codes</a></li>
+      <li><a href="#section7">7. Sizing Calculations</a></li>
+      <li><a href="#section8">8. Pump Types with Diagrams</a></li>
+      <li><a href="#section9">9. Pump Room Layout & Requirements</a></li>
+      <li><a href="#section10">10. Pump Controllers</a></li>
+      <li><a href="#section11">11. Pump Testing</a></li>
+      <li><a href="#section12">12. Accessories</a></li>
+      <li><a href="#section13">13. Power Supply & Protection</a></li>
+      <li><a href="#section14">14. Installation Guidelines</a></li>
+      <li><a href="#section15">15. Commissioning Procedures</a></li>
+      <li><a href="#section16">16. Maintenance – Daily to Annual</a></li>
+      <li><a href="#section17">17. Troubleshooting</a></li>
+      <li><a href="#section18">18. System Components</a></li>
+      <li><a href="#section19">19. Pump Room Layout</a></li>
+      <li><a href="#section20">20. Commissioning – Tests & Approvals</a></li>
+      <li><a href="#section21">21. Maintenance – Logs & Formats</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="content">
+    <!-- Insert all previously formatted section HTML here -->
+    <!-- Example: Section 1 -->
+<section id="section1" data-aos="fade-up">
+  <h2>🔥 Section 1: Introduction to Fire Pumps</h2>
+
+  <h3>🔹 What is a Fire Pump?</h3>
+  <p>A fire pump is a critical component of a fire protection system. It is designed to increase the pressure of a water supply when that pressure is insufficient to meet the hydraulic design requirements of the fire protection system, such as sprinklers, hydrants, or standpipes.</p>
+
+  <h3>🔹 Purpose and Importance</h3>
+  <ul>
+    <li>Ensures adequate water pressure during a fire emergency.</li>
+    <li>Acts as the heart of the fire protection system.</li>
+    <li>Used in buildings where water pressure is too low to meet fire protection needs.</li>
+    <li>Essential in high-rise buildings, large warehouses, chemical plants, power plants, etc.</li>
+  </ul>
+
+  <h3>🔹 How Fire Pumps Work</h3>
+  <p>When a drop in pressure is detected in the fire system (due to a sprinkler head activating, for example), the controller turns on the fire pump automatically. The pump draws water from a reliable source (tank, reservoir, municipal line) and pressurizes it into the system.</p>
+  <p><strong>Important Note:</strong> Fire pumps do not increase flow beyond the design limits of the system—they increase pressure, ensuring effective delivery of water.</p>
+
+  <h3>🔢 Basic Formulae Used in Fire Pump Calculations</h3>
+  <p><strong>1. Pump Power Calculation (kW):</strong></p>
+  <pre>
+Power (kW) = (Q × H × γ) / (η × 1000)
+Where:
+Q = Flow rate (m³/s)
+H = Head (m)
+γ = Specific weight of water (≈ 9810 N/m³)
+η = Pump efficiency (decimal)
+  </pre>
+
+  <p><strong>2. Total Head (H):</strong></p>
+  <pre>
+H = Hs + Hd + Hf
+Where:
+Hs = Suction head (or lift)
+Hd = Discharge head
+Hf = Friction losses in pipes and fittings
+  </pre>
+
+  <p><strong>3. NPSH (Net Positive Suction Head):</strong></p>
+  <pre>
+NPSH available = Pa − Pv + Hs − Hf
+Where:
+Pa = Atmospheric pressure head
+Pv = Vapor pressure of water
+Hs = Static suction head
+Hf = Suction friction loss
+  </pre>
+
+  <h3>🔧 Why is NPSH Important?</h3>
+  <p>To prevent cavitation, the NPSHa must always be greater than the NPSH required by the pump.</p>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Introduction to Fire Pumps</p>
+</section>
+
+<section id="section2" data-aos="fade-right">
+  <h2>🔥 Section 2: Types of Fire Pumps</h2>
+  <p>Fire pumps come in different types based on construction, application, orientation, and how they connect to the water source and driver.</p>
+  <p>We’ll cover:</p>
+  <ul>
+    <li>Horizontal Split-Case Pump (HSC)</li>
+    <li>Vertical Turbine Pump (VTP)</li>
+    <li>Vertical Inline Pump (VIL)</li>
+    <li>End Suction Pump</li>
+    <li>Positive Displacement Pump</li>
+    <li>Multistage Centrifugal Pump</li>
+  </ul>
+
+  <h3>🔸 1. Horizontal Split-Case Pump (HSC)</h3>
+  <p><strong>Description:</strong> Most commonly used fire pump. The casing is split horizontally, making maintenance easier. Water enters from one side, splits through the impeller, and exits the other side.</p>
+  <p><strong>Features:</strong> High efficiency. Handles large flow rates: 250–5000 GPM. Requires more space due to horizontal layout.</p>
+  <p><strong>Applications:</strong> Industrial plants, commercial buildings, airports.</p>
+  <pre>
+[Suction] ---> | IMP | ---> [Discharge]
+               |_____|
+         Horizontal Split Case
+  </pre>
+
+  <h3>🔸 2. Vertical Turbine Pump (VTP)</h3>
+  <p><strong>Description:</strong> Used where the water source is below the pump, like a reservoir or deep well. Consists of impellers mounted on a vertical shaft.</p>
+  <p><strong>Features:</strong> Self-priming (impellers always submerged). Suitable for non-flooded suction. Flow range: 250–5000+ GPM.</p>
+  <p><strong>Applications:</strong> Water tanks, rivers, lakes, deep wells.</p>
+  <p><strong>Note:</strong> Requires column bearings and line shaft bearings, often with water-lubricated sleeves.</p>
+
+  <h3>🔸 3. Vertical Inline Pump (VIL)</h3>
+  <p><strong>Description:</strong> Compact design where suction and discharge are on the same axis. Mounted vertically—ideal for tight spaces.</p>
+  <p><strong>Features:</strong> Flow range: 50–1500 GPM. Direct motor mounting—no coupling or alignment needed. Not easy to repair without dismounting.</p>
+  <p><strong>Applications:</strong> Smaller buildings, commercial offices.</p>
+
+  <h3>🔸 4. End Suction Pump</h3>
+  <p><strong>Description:</strong> Single-suction impeller; water enters one side and exits the top. Compact and simple design.</p>
+  <p><strong>Features:</strong> Less expensive. Lower flow rates: 50–750 GPM. Requires priming.</p>
+  <p><strong>Applications:</strong> Residential, light commercial setups.</p>
+
+  <h3>🔸 5. Positive Displacement Pump</h3>
+  <p><strong>Description:</strong> Moves a fixed volume of water per cycle. Used when high pressure and low flow are needed.</p>
+  <p><strong>Types:</strong> Gear pumps, Piston pumps, Rotary vane pumps</p>
+  <p><strong>Formula:</strong></p>
+  <pre>
+Q = V × N
+Where:
+Q = Flow rate (L/min or GPM)
+V = Volume per cycle
+N = Number of cycles per minute
+  </pre>
+  <p><strong>Features:</strong> Self-priming. High pressure, precise control. Low flow (10–200 GPM).</p>
+  <p><strong>Applications:</strong> Foam systems, diesel injection systems.</p>
+
+  <h3>🔸 6. Multistage Centrifugal Pump</h3>
+  <p><strong>Description:</strong> Multiple impellers are used in series to increase pressure.</p>
+  <p><strong>Features:</strong> High-pressure applications. Flow range: 100–1000+ GPM. Efficient over long pipe runs.</p>
+  <p><strong>Applications:</strong> High-rise buildings, mining systems.</p>
+
+  <h3>🔍 Summary Table</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr>
+        <th>Type</th>
+        <th>Flow Range (GPM)</th>
+        <th>Pressure</th>
+        <th>Application</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HSC</td>
+        <td>250–5000</td>
+        <td>Medium</td>
+        <td>Industrial, commercial</td>
+        <td>Common, reliable</td>
+      </tr>
+      <tr>
+        <td>VTP</td>
+        <td>250–5000+</td>
+        <td>High</td>
+        <td>Deep wells, open sources</td>
+        <td>Self-priming</td>
+      </tr>
+      <tr>
+        <td>VIL</td>
+        <td>50–1500</td>
+        <td>Medium</td>
+        <td>Tight-space buildings</td>
+        <td>Compact, vertical alignment</td>
+      </tr>
+      <tr>
+        <td>End Suction</td>
+        <td>50–750</td>
+        <td>Low-Med</td>
+        <td>Small buildings</td>
+        <td>Cost-effective</td>
+      </tr>
+      <tr>
+        <td>Positive Displacement</td>
+        <td>10–200</td>
+        <td>High</td>
+        <td>Specialized fire systems</td>
+        <td>Fixed volume</td>
+      </tr>
+      <tr>
+        <td>Multistage Centrifugal</td>
+        <td>100–1000+</td>
+        <td>High</td>
+        <td>High-rise buildings</td>
+        <td>Multiple impellers in series</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Types of Fire Pumps</p>
+</section>
+
+<section id="section3" data-aos="fade-left">
+  <h2>🔥 Section 3: Key Components of Fire Pumps</h2>
+  <p>Understanding the components of a fire pump is crucial for design, maintenance, and troubleshooting. Below is a detailed breakdown of all major components, including their function, materials, and engineering considerations.</p>
+
+  <h3>🔸 1. Pump Casing</h3>
+  <p><strong>Function:</strong> Houses the impeller. Converts velocity into pressure (diffuser/volute design). Withstands pressure and protects internal components.</p>
+  <p><strong>Types:</strong> Volute Casing – Single spiral chamber for fluid flow. Diffuser Casing – Fixed vanes that guide fluid from impeller to discharge.</p>
+  <p><strong>Material:</strong> Cast iron, ductile iron, or bronze (for corrosion resistance).</p>
+
+  <h3>🔸 2. Impeller</h3>
+  <p><strong>Function:</strong> Transfers mechanical energy to the water (adds velocity). Rotates inside the casing to create centrifugal force.</p>
+  <p><strong>Types:</strong> Open – Easy to clean, less efficient. Semi-open – Balance of cleaning and efficiency. Closed – Most efficient and used in fire pumps.</p>
+  <p><strong>Formula:</strong></p>
+  <pre>
+Head (H) = (V2² - V1²) / 2g
+Where:
+V2 = Velocity at impeller outlet
+V1 = Velocity at inlet
+g  = Gravitational acceleration
+  </pre>
+  <p><strong>Material:</strong> Bronze (most common), stainless steel (corrosion-resistant).</p>
+
+  <h3>🔸 3. Pump Shaft</h3>
+  <p><strong>Function:</strong> Transfers mechanical power from the driver to the impeller.</p>
+  <p><strong>Notes:</strong> Must be rigid, aligned, and corrosion-resistant. Shaft sleeves may be used to protect it from wear at bearing points.</p>
+
+  <h3>🔸 4. Bearings</h3>
+  <p><strong>Function:</strong> Support the shaft and reduce rotational friction. Absorb radial and axial loads.</p>
+  <p><strong>Types:</strong> Ball bearings or roller bearings, lubricated with oil or grease.</p>
+
+  <h3>🔸 5. Shaft Seals</h3>
+  <p><strong>Function:</strong> Prevent water leakage where the shaft exits the pump casing.</p>
+  <p><strong>Types:</strong> Packing seal (traditional, needs adjustment). Mechanical seal (modern, better sealing).</p>
+
+  <h3>🔸 6. Coupling</h3>
+  <p><strong>Function:</strong> Connects the pump shaft to the driver (motor/engine). Absorbs misalignment and torque shocks.</p>
+  <p><strong>Types:</strong> Flexible coupling (most common in fire pumps).</p>
+
+  <h3>🔸 7. Pump Driver (Motor/Engine)</h3>
+  <p><strong>Types:</strong> Electric Motor – Quiet, clean, automatic. Diesel Engine – For systems where power failure is a risk. Steam Turbine – Rare, used in certain industrial environments.</p>
+  <p><strong>Selection Formula:</strong></p>
+  <pre>
+Power (kW) = (Q × H × γ) / (η × 1000)
+  </pre>
+  <p>Always size the motor with a 15–25% service factor above required HP.</p>
+
+  <h3>🔸 8. Pump Controller</h3>
+  <p><strong>Function:</strong> Automatically starts the pump when pressure drops. Provides alarms, monitoring, and manual override.</p>
+  <p><strong>Features:</strong> Pressure sensors, Auto/manual start, Battery charging (for diesel), Event logging</p>
+  <p><strong>Standards:</strong> Must comply with NFPA 20 and UL/FM standards.</p>
+
+  <h3>🔸 9. Jockey Pump</h3>
+  <p><strong>Function:</strong> Maintains system pressure during minor leaks or temperature changes. Prevents unnecessary fire pump starts.</p>
+  <p><strong>Flow Rate:</strong> Usually 1–2% of main fire pump flow.</p>
+  <p><strong>Pressure:</strong> Cut-in/cut-out set higher than the fire pump.</p>
+
+  <h3>🔸 10. Relief Valve / Pressure Relief Valve</h3>
+  <p><strong>Function:</strong> Protects the system from overpressure. Discharges water when pressure exceeds setpoint.</p>
+  <p><strong>Sizing Formula:</strong></p>
+  <pre>
+Q = F / 1.15
+Where:
+Q = Relief valve capacity
+F = Fire pump rated flow
+  </pre>
+
+  <h3>🔸 11. Check Valve & Isolation Valve</h3>
+  <p><strong>Check Valve:</strong> Prevents backflow from the discharge header.</p>
+  <p><strong>Isolation Valve:</strong> Allows pump maintenance without draining the entire system.</p>
+
+  <h3>🔍 Engineering Note:</h3>
+  <p>For diesel engine pumps, the system must also include:</p>
+  <ul>
+    <li>Fuel tank (minimum 1-hour runtime at full load)</li>
+    <li>Exhaust system</li>
+    <li>Cooling system (air-cooled or radiator)</li>
+    <li>Battery starter system</li>
+  </ul>
+
+  <h3>🧰 Summary Table</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr>
+        <th>Component</th>
+        <th>Function</th>
+        <th>Material</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Casing</td><td>Directs water flow and holds pressure</td><td>Cast iron, bronze</td><td>Volute or diffuser</td></tr>
+      <tr><td>Impeller</td><td>Adds velocity to water</td><td>Bronze, SS</td><td>Closed type preferred</td></tr>
+      <tr><td>Shaft</td><td>Transfers mechanical energy</td><td>SS, carbon steel</td><td>Needs perfect alignment</td></tr>
+      <tr><td>Bearings</td><td>Reduce friction</td><td>Steel, bronze</td><td>Oil or grease lubricated</td></tr>
+      <tr><td>Seals</td><td>Prevent leakage</td><td>Carbon, rubber</td><td>Packing or mechanical</td></tr>
+      <tr><td>Coupling</td><td>Connects driver and pump</td><td>Steel</td><td>Flexible type common</td></tr>
+      <tr><td>Driver</td><td>Powers the pump</td><td>Motor/Engine</td><td>Sized with safety margin</td></tr>
+      <tr><td>Controller</td><td>Starts/stops pump based on pressure</td><td>Electronic panel</td><td>NFPA 20 compliant</td></tr>
+      <tr><td>Jockey Pump</td><td>Maintains pressure for minor losses</td><td>Small pump</td><td>1–2% of main pump flow</td></tr>
+      <tr><td>Relief Valve</td><td>Prevents overpressure</td><td>Brass, bronze</td><td>Sized >115% of pump rated flow</td></tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Key Components of Fire Pumps</p>
+</section>
+
+<section id="section4" data-aos="fade-up">
+  <h2>🔥 Section 4: Working Principle of Fire Pumps</h2>
+
+  <h3>🔸 Overview</h3>
+  <p>A fire pump is essentially a centrifugal pump (or positive displacement in special cases) used to supply pressurized water to a fire protection system. It operates automatically upon detecting a pressure drop caused by sprinkler activation, hydrant usage, or a manual start signal.</p>
+
+  <h3>🔹 Step-by-Step Working Process</h3>
+  <ol>
+    <li><strong>Water Source Connection</strong><br> The pump must draw water from a reliable source:
+      <ul>
+        <li>Gravity-fed tank</li>
+        <li>Municipal water supply</li>
+        <li>Underground/overhead reservoir</li>
+        <li>Well (for vertical turbine pumps)</li>
+      </ul>
+    </li>
+    <li><strong>Suction Stage</strong><br> Water is drawn into the pump suction inlet. The impeller’s rotation creates low pressure at the center (eye), causing water to flow into the pump.</li>
+    <li><strong>Impeller Rotation</strong><br> The impeller (connected to a rotating shaft) accelerates the water outward. Kinetic energy is transferred to the fluid.</li>
+    <li><strong>Volute/Diffuser Conversion</strong><br> The casing (volute or diffuser) converts velocity energy into pressure energy. Water exits the pump at high pressure and flows into the discharge piping.</li>
+    <li><strong>Delivery to System</strong><br> The pressurized water is directed to:
+      <ul>
+        <li>Sprinklers</li>
+        <li>Standpipes</li>
+        <li>Fire hose reels</li>
+        <li>Hydrants</li>
+      </ul>
+      A check valve ensures no backflow into the pump when it’s off.
+    </li>
+    <li><strong>Controller Logic</strong><br> The pump controller monitors system pressure using a pressure switch.
+      <br><strong>Typical pressure settings:</strong>
+      <ul>
+        <li>Jockey pump cut-in: 130 psi</li>
+        <li>Jockey pump cut-out: 140 psi</li>
+        <li>Fire pump cut-in: 120 psi</li>
+      </ul>
+      If pressure drops to the cut-in point, the controller activates the pump automatically.
+    </li>
+  </ol>
+
+  <h3>🔹 Working Principle Diagram (Textual)</h3>
+  <pre>
+[Water Source] → [Suction Pipe] → [Pump Impeller] → [Casing/Volute] → [Discharge Pipe] → [Fire Protection System]
+  </pre>
+
+  <h3>🔢 Technical Formulae</h3>
+
+  <p><strong>1. Bernoulli’s Equation (Ideal Fluid Flow)</strong></p>
+  <pre>
+P1 + (1/2)ρV1² + ρgh1 = P2 + (1/2)ρV2² + ρgh2
+
+Where:
+P = Pressure (Pa)
+ρ = Density of water (≈ 1000 kg/m³)
+V = Velocity (m/s)
+h = Height (m)
+g = 9.81 m/s²
+  </pre>
+  <p>🔧 Used to understand energy conservation from suction to discharge.</p>
+
+  <p><strong>2. Head (H) Developed by Pump</strong></p>
+  <pre>
+H = P / γ
+
+Where:
+H = Head in meters
+P = Pressure (Pa)
+γ = Specific weight of water (≈ 9810 N/m³)
+  </pre>
+
+  <p><strong>3. Flow Rate</strong></p>
+  <pre>
+Q = A × V
+
+Where:
+Q = Flow rate (m³/s)
+A = Cross-sectional area of pipe (m²)
+V = Flow velocity (m/s)
+  </pre>
+
+  <h3>🔍 Key Concepts</h3>
+  <ul>
+    <li><strong>Centrifugal Action:</strong> Converts mechanical power into hydraulic energy (pressure + velocity).</li>
+    <li><strong>Priming:</strong> Most fire pumps must be flooded (water-filled suction line) to operate properly—except vertical turbine pumps, which are self-priming.</li>
+    <li><strong>Cavitation:</strong> Occurs when NPSH (Net Positive Suction Head) is too low. Causes pump damage and performance drop.</li>
+  </ul>
+
+  <h3>🔥 Example Scenario</h3>
+  <p>In a high-rise building, a sprinkler activates on the 15th floor. Water pressure drops below 120 psi. The controller starts the fire pump. It draws water from a storage tank in the basement, builds pressure, and delivers water to the sprinklers at ~150 psi, overcoming vertical head and friction losses.</p>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Working Principle of Fire Pumps</p>
+</section>
+
+<section id="section5" data-aos="fade-right">
+  <h2>🔥 Section 5: Power Sources of Fire Pumps</h2>
+  <p>Fire pumps require a reliable, uninterrupted power supply to operate during emergencies. Choosing the right driver type depends on the building's layout, power infrastructure, and fire safety requirements.</p>
+
+  <h3>🔹 Main Types of Power Sources:</h3>
+  <ul>
+    <li>Electric Motor Drive</li>
+    <li>Diesel Engine Drive</li>
+    <li>Steam Turbine Drive (rare)</li>
+  </ul>
+
+  <h3>🔸 1. Electric Motor Drive</h3>
+  <p><strong>Overview:</strong> Most commonly used power source for fire pumps. Operates from mains electricity or a dedicated backup supply (generator or UPS).</p>
+  <p><strong>Features:</strong> Reliable in well-powered urban areas. Automatic start via pressure switch and controller. Low maintenance, clean, and quiet.</p>
+  <p><strong>Advantages:</strong></p>
+  <ul>
+    <li>Fast start time (&lt;10 seconds)</li>
+    <li>Low operational cost</li>
+    <li>Easier to install and maintain</li>
+  </ul>
+  <p><strong>Disadvantages:</strong></p>
+  <ul>
+    <li>Dependent on utility power unless backed by a generator</li>
+    <li>Not suitable where power outages are common</li>
+  </ul>
+  <p><strong>Example Motor Selection Formula:</strong></p>
+  <pre>
+HP = (Q × H) / (3960 × η)
+
+Where:
+Q = Flow in GPM
+H = Total dynamic head in ft
+η = Pump efficiency (decimal)
+
+Convert HP to kilowatts: kW = HP × 0.746
+  </pre>
+
+  <h3>🔸 2. Diesel Engine Drive</h3>
+  <p><strong>Overview:</strong> Used where electricity is unreliable or not preferred. Engine mechanically drives the pump via shaft and flexible coupling.</p>
+  <p><strong>Features:</strong> Independent of the power grid. Must be equipped with:</p>
+  <ul>
+    <li>Fuel tank (minimum 1-hour at 100% load)</li>
+    <li>Battery-powered starter (2 batteries)</li>
+    <li>Cooling system (heat exchanger or radiator)</li>
+    <li>Exhaust system (silencer, piping)</li>
+  </ul>
+  <p><strong>Advantages:</strong> Self-sufficient power. Complies with NFPA 20 for backup in many critical applications.</p>
+  <p><strong>Disadvantages:</strong> Higher maintenance: oil, filters, coolant. Noisy and requires fuel management. Slower to start (~15 seconds).</p>
+  <p><strong>Key NFPA Requirements:</strong></p>
+  <ul>
+    <li>Fuel tank must be sized for at least 1 hour full load operation</li>
+    <li>Dual batteries with automatic charging</li>
+    <li>Weekly test run under no-flow conditions</li>
+  </ul>
+
+  <h3>🔸 3. Steam Turbine Drive (Rare)</h3>
+  <p><strong>Overview:</strong> Uses steam (from industrial processes) to turn a turbine which drives the pump. Now mostly obsolete except in refineries and power plants.</p>
+  <p><strong>Features:</strong> No electricity or diesel required. Useful where high-pressure steam is available.</p>
+  <p><strong>Disadvantages:</strong> Complex installation. High initial cost. Requires skilled operation.</p>
+
+  <h3>🔍 Comparison Table</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr>
+        <th>Feature</th>
+        <th>Electric Motor</th>
+        <th>Diesel Engine</th>
+        <th>Steam Turbine</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Start-up time</td><td>&lt;10 seconds</td><td>~15 seconds</td><td>~20–30 seconds</td></tr>
+      <tr><td>NFPA Compliance</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+      <tr><td>Maintenance</td><td>Low</td><td>Medium–High</td><td>High</td></tr>
+      <tr><td>Dependency</td><td>Grid/Generator</td><td>Independent</td><td>Steam source</td></tr>
+      <tr><td>Cost (initial)</td><td>Low–Medium</td><td>Medium–High</td><td>High</td></tr>
+      <tr><td>Ideal Use Case</td><td>Urban, reliable grid</td><td>Remote, critical ops</td><td>Industrial, steam plants</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔋 Backup Power for Electric Pumps</h3>
+  <p>If only an electric motor is used, NFPA 20 requires a reliable backup, like:</p>
+  <ul>
+    <li>On-site generator</li>
+    <li>Dual utility feeds</li>
+    <li>Engine-driven pump as redundancy</li>
+  </ul>
+
+  <h3>🧪 Design Tip</h3>
+  <p>Use a service factor of 1.15 to 1.25 when sizing the driver to account for startup torque, friction, and future wear.</p>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Power Sources of Fire Pumps</p>
+</section>
+
+<section id="section6" data-aos="fade-left">
+  <h2>🔥 Section 6: Standards and Codes for Fire Pumps</h2>
+  <p>Fire pump design, installation, and operation must strictly follow international and national standards to ensure reliability during emergencies. Below is a comprehensive breakdown of applicable codes, agencies, and key requirements.</p>
+
+  <h3>🔸 A. Primary Standards Organizations</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Organization</th><th>Full Name</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>NFPA</td><td>National Fire Protection Association</td><td>Sets fire pump design & installation code</td></tr>
+      <tr><td>UL</td><td>Underwriters Laboratories</td><td>Product certification & testing</td></tr>
+      <tr><td>FM</td><td>Factory Mutual Global</td><td>Approval for loss prevention & safety</td></tr>
+      <tr><td>ISO</td><td>International Organization for Standardization</td><td>Sets international testing methods</td></tr>
+      <tr><td>BIS (IS)</td><td>Bureau of Indian Standards</td><td>Indian codes for fire protection systems</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 B. Key Codes & Standards</h3>
+
+  <h4>🔹 1. NFPA 20 – Standard for the Installation of Stationary Pumps for Fire Protection</h4>
+  <p><strong>Highlights:</strong> Most widely adopted standard globally. Governs design, installation, and acceptance testing of fire pumps.</p>
+  <p><strong>Key Requirements:</strong></p>
+  <ul>
+    <li>Minimum pump pressure: not less than system demand + losses</li>
+    <li>Requires pressure relief valve when driver is over-sized</li>
+    <li>Fire pump must start automatically within 10–30 seconds</li>
+    <li>Pump Room must be:
+      <ul>
+        <li>Fire-rated (2-hour)</li>
+        <li>Free from flooding</li>
+        <li>Temperature controlled (above 4°C / 40°F)</li>
+      </ul>
+    </li>
+    <li>Requires weekly testing (manual or automatic)</li>
+    <li>Pump must be sized to meet:</li>
+  </ul>
+  <pre>
+Q_required = Q_design × safety_factor
+  </pre>
+  <p>NFPA 25 covers maintenance and inspection of installed fire pumps.</p>
+
+  <h4>🔹 2. UL 448 – Standard for Centrifugal Fire Pumps</h4>
+  <p><strong>Highlights:</strong> Covers performance and safety of fire pumps. UL-listed pumps are tested for:
+  <ul>
+    <li>Flow</li>
+    <li>Pressure</li>
+    <li>Endurance (250-hour run)</li>
+  </ul>
+  </p>
+
+  <h4>🔹 3. FM Approval (Class 1311, 1319, etc.)</h4>
+  <p><strong>Highlights:</strong> FM Global tests fire pumps for:
+  <ul>
+    <li>Durability</li>
+    <li>Reliability</li>
+    <li>Compatibility with fire systems</li>
+  </ul>
+  FM-approved pumps have enhanced insurance acceptance.</p>
+
+  <h4>🔹 4. ISO 5199 / ISO 9906 – International Pump Standards</h4>
+  <p><strong>Highlights:</strong> ISO 5199: Mechanical design of centrifugal pumps. ISO 9906: Hydraulic performance test methods. Used for performance verification.</p>
+
+  <h4>🔹 5. Indian Standard Codes (IS)</h4>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Code</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>IS 12469</td><td>General requirements for fire-fighting centrifugal pumps</td></tr>
+      <tr><td>IS 15301</td><td>Fire pumps – End suction types</td></tr>
+      <tr><td>IS 636</td><td>Fire hose – delivery hoses</td></tr>
+      <tr><td>IS 13039</td><td>Installation and maintenance of fire pumps</td></tr>
+    </tbody>
+  </table>
+
+  <p>Indian Fire Services often require IS-compliant systems.</p>
+
+  <h3>🔸 C. Pump Testing & Acceptance</h3>
+  <p><strong>Required Tests (as per NFPA 20 & ISO 9906):</strong></p>
+  <ul>
+    <li>Hydrostatic Test – Casing tested at 1.5× maximum pressure</li>
+    <li>Performance Curve Test – At 100%, 150%, and 0% (churn) flow</li>
+    <li>Net Positive Suction Head (NPSH) Test – Prevents cavitation</li>
+    <li>Endurance Test – Run at rated conditions for hours</li>
+    <li>Electrical Test – For insulation resistance and phase balance</li>
+  </ul>
+
+  <h3>🔸 D. Markings and Documentation</h3>
+  <p>Every certified fire pump must come with:</p>
+  <ul>
+    <li>Manufacturer’s data plate</li>
+    <li>UL/FM marking (if certified)</li>
+    <li>Flow-pressure curves</li>
+    <li>Installation and maintenance manual</li>
+    <li>Controller settings and wiring diagram</li>
+  </ul>
+
+  <h3>🔍 Engineering Tip</h3>
+  <p>To comply with NFPA 20, design should ensure:</p>
+  <pre>
+P_pump ≥ P_demand + h_f + h_s
+
+Where:
+P_pump   = Pump outlet pressure
+P_demand = Required pressure at the highest/farthest point
+h_f      = Friction losses
+h_s      = Static head (elevation)
+  </pre>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Standards and Codes for Fire Pumps</p>
+</section>
+
+<section id="section7" data-aos="fade-up">
+  <h2>🔥 Section 7: Fire Pump Sizing Calculations (With All Formulas)</h2>
+  <p>Proper fire pump sizing is critical to ensure sufficient flow and pressure during a fire emergency. This section explains how to calculate:</p>
+
+  <h3>🔸 A. Basic Design Inputs</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Parameter</th><th>Symbol</th><th>Unit</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Required system flow</td><td>Q</td><td>GPM or LPM</td></tr>
+      <tr><td>System pressure demand</td><td>P<sub>d</sub></td><td>psi or bar</td></tr>
+      <tr><td>Static head</td><td>H<sub>s</sub></td><td>m or ft</td></tr>
+      <tr><td>Friction losses</td><td>H<sub>f</sub></td><td>m or ft</td></tr>
+      <tr><td>Safety margin</td><td>—</td><td>%</td></tr>
+      <tr><td>Pump efficiency</td><td>η</td><td>Decimal (0–1)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 B. Step-by-Step Pump Sizing</h3>
+  <h4>🔹 1. Total Head Required</h4>
+  <pre>
+H<sub>t</sub> = H<sub>s</sub> + H<sub>f</sub> + H<sub>r</sub>
+  </pre>
+  <p><strong>Convert pressure to head:</strong></p>
+  <pre>
+H = (P × 2.31) / SG   (for water, SG = 1)
+  </pre>
+
+  <h4>🔹 2. Flow Rate Conversion</h4>
+  <pre>
+1 GPM = 3.785 LPM
+
+Flow (m³/hr) = (LPM × 60) / 1000
+  </pre>
+
+  <h4>🔹 3. Brake Horsepower (BHP)</h4>
+  <pre>
+BHP = (Q × H<sub>t</sub>) / (3960 × η)
+kW = BHP × 0.746
+  </pre>
+
+  <h4>🔹 4. Select Pump Size from Curve</h4>
+  <ul>
+    <li>Match flow at BEP (Best Efficiency Point)</li>
+    <li>Allow 10–20% margin above pressure</li>
+    <li>Match impeller diameter & speed</li>
+  </ul>
+
+  <h3>🔸 C. Friction Loss (Hazen-Williams Formula)</h3>
+  <pre>
+H<sub>f</sub> = 10.67 × (Q<sup>1.852</sup> / (C<sup>1.852</sup> × d<sup>4.87</sup>)) × L
+  </pre>
+  <p>Where C = friction factor, d = diameter in inches, L = pipe length (ft)</p>
+
+  <h3>🔸 D. Example Calculation</h3>
+  <p><strong>Scenario:</strong> 5-floor commercial building</p>
+  <ul>
+    <li>Flow = 750 GPM</li>
+    <li>Elevation = 120 ft</li>
+    <li>Friction Loss = 30 ft</li>
+    <li>Required Pressure = 45 psi</li>
+    <li>Efficiency = 0.75</li>
+  </ul>
+  <pre>
+H<sub>r</sub> = 45 × 2.31 = 104 ft
+H<sub>t</sub> = 120 + 30 + 104 = 254 ft
+BHP = (750 × 254) / (3960 × 0.75) = 64.12 HP
+kW = 64.12 × 0.746 = 47.8 kW
+  </pre>
+  <p>Select a 60 HP motor or 55–60 kW diesel engine, allowing service factor.</p>
+
+  <h3>🔸 E. Safety Margins</h3>
+  <ul>
+    <li>Add +10% head</li>
+    <li>Add +10–15% motor margin</li>
+    <li>Select 75 HP motor for 64 HP calculation</li>
+  </ul>
+
+  <h3>🔸 F. Jockey Pump Sizing</h3>
+  <ul>
+    <li>Flow: 1–2% of main fire pump</li>
+    <li>Pressure: 5–10 psi higher than fire pump cut-in</li>
+    <li>Auto start/stop by pressure switch</li>
+  </ul>
+
+  <h3>🔍 Tip for Lokesh</h3>
+  <p>Use software like <strong>AutoSPRINK</strong>, <strong>Elite Fire</strong>, or <strong>PipeFlow</strong> to simulate real networks and optimize performance.</p>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Sizing Calculations</p>
+</section>
+<section id="section8">
+  <h2>🔥 Section 8: Types of Fire Pumps (with Diagrams & Deep Details)</h2>
+  <p>Fire pumps come in several types based on construction, application, and installation requirements. Each has unique advantages. Let’s break them down:</p>
+
+  <h3>🔸 A. Main Fire Pump Types</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Flow Capacity</th>
+        <th>Pressure Capability</th>
+        <th>Application</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>End Suction Pump</td>
+        <td>Low to medium</td>
+        <td>Up to ~150 psi</td>
+        <td>Compact indoor areas</td>
+      </tr>
+      <tr>
+        <td>Horizontal Split Case Pump</td>
+        <td>High flow</td>
+        <td>Up to ~250 psi</td>
+        <td>Large buildings/complexes</td>
+      </tr>
+      <tr>
+        <td>Vertical Turbine Pump</td>
+        <td>High head (deep well)</td>
+        <td>>300 psi</td>
+        <td>Underground tanks/wells</td>
+      </tr>
+      <tr>
+        <td>Vertical Inline Pump</td>
+        <td>Low to medium</td>
+        <td>Up to ~150 psi</td>
+        <td>Small buildings/retrofits</td>
+      </tr>
+      <tr>
+        <td>Multistage (Vertical/Horizontal)</td>
+        <td>Medium to high</td>
+        <td>>300 psi (stacked)</td>
+        <td>High-rise, pressure zones</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>🔹 1. End Suction Pump</h3>
+  <p><strong>🛠 Structure:</strong> Single inlet, impeller, and discharge.<br>
+     Suction: front — Discharge: top</p>
+  <p><strong>📘 Features:</strong> Compact, horizontal, motor close-coupled</p>
+  <p><strong>📊 Best For:</strong> Small commercial/indoor spaces<br>
+     <strong>📐 Flow:</strong> 100–750 GPM</p>
+  <pre>
+[Motor] → [Impeller Casing] → ↑ Water Outlet
+                      ↑
+                 Suction Inlet
+  </pre>
+
+  <h3>🔹 2. Horizontal Split Case Pump (HSC)</h3>
+  <p><strong>🛠 Structure:</strong> Horizontally split casing, double-suction impeller</p>
+  <p><strong>📘 Features:</strong> Durable, serviceable, large footprint</p>
+  <p><strong>📊 Best For:</strong> High-flow needs: warehouses, airports<br>
+     <strong>📐 Flow:</strong> 500–5000+ GPM</p>
+  <pre>
+        ↑
+Water → ⬅[Split Case Pump]➡ → High-Pressure Outlet
+           (Motor driven)
+  </pre>
+
+  <h3>🔹 3. Vertical Turbine Pump</h3>
+  <p><strong>🛠 Structure:</strong> Bowl submerged in water source, long vertical shaft</p>
+  <p><strong>📘 Features:</strong> Only pump approved for negative suction, self-priming</p>
+  <p><strong>📊 Best For:</strong> Deep wells, tanks, remote areas<br>
+     <strong>📐 Flow:</strong> 250–2500 GPM</p>
+  <pre>
+[Motor]
+   │
+   │ Shaft
+   ↓
+[Pump Bowl] submerged in tank/well
+  </pre>
+
+  <h3>🔹 4. Vertical Inline Pump</h3>
+  <p><strong>🛠 Structure:</strong> Suction/discharge inline, vertical motor on top</p>
+  <p><strong>📘 Features:</strong> Compact, space-saving, no alignment required</p>
+  <p><strong>📊 Best For:</strong> Small buildings, retrofits<br>
+     <strong>📐 Flow:</strong> 50–500 GPM</p>
+  <pre>
+    Discharge
+       ↑ 
+       │
+    [Motor]
+       │
+    [Pump]
+       │
+       ↓ 
+    Suction
+  </pre>
+
+  <h3>🔹 5. Multistage Fire Pumps (Horizontal or Vertical)</h3>
+  <p><strong>🛠 Structure:</strong> Multiple impellers in series for pressure boost</p>
+  <p><strong>📘 Features:</strong> High-pressure output, efficient</p>
+  <p><strong>📊 Best For:</strong> High-rise or long distance piping<br>
+     <strong>📐 Flow:</strong> 100–1500 GPM<br>
+     <strong>📐 Pressure:</strong> Up to 350+ psi</p>
+  <pre>
+[Motor]
+  ↓
+[Stage 1] → [Stage 2] → [Stage 3] → Outlet
+  </pre>
+
+  <h3>🔍 How to Choose the Right Pump?</h3>
+  <table>
+    <thead>
+      <tr><th>Factor</th><th>Choose...</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Space is limited</td><td>Vertical inline / End suction</td></tr>
+      <tr><td>High flow needed</td><td>Horizontal split case</td></tr>
+      <tr><td>Suction below pump</td><td>Vertical turbine</td></tr>
+      <tr><td>High-rise (high head)</td><td>Multistage vertical</td></tr>
+      <tr><td>Large capacity + easy service</td><td>Horizontal split case</td></tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Types of Fire Pumps</p>
+</section>
+
+
+<section id="section9" data-aos="fade-right">
+  <h2>🔥 Section 9: Fire Pump Room Layout & Requirements</h2>
+  <p>The Fire Pump Room is the heart of the fire protection system. If the environment isn’t right, the pump may fail during an emergency — which is unacceptable.</p>
+  <p>This section covers dimensions, ventilation, fire rating, equipment layout, and safety features — as per NFPA 20, IS 13039, and industry best practices.</p>
+
+  <h3>🔸 A. Basic Requirements (As per NFPA 20)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Item</th><th>Minimum Standard</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Fire rating</td><td>2-hour fire-resistive construction</td></tr>
+      <tr><td>Room temperature</td><td>Minimum 4°C (40°F) at all times</td></tr>
+      <tr><td>Room access</td><td>Direct entrance from outside or fire-rated hallway</td></tr>
+      <tr><td>Drainage</td><td>Floor sloped to drain or sump</td></tr>
+      <tr><td>Lighting</td><td>Permanent and emergency light sources</td></tr>
+      <tr><td>Clearances</td><td>Minimum 3 ft (1 m) around equipment</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 B. Minimum Pump Room Dimensions</h3>
+  <p><strong>Horizontal Split Case Pump:</strong></p>
+  <ul>
+    <li>Length = Pump length + 1.5 m</li>
+    <li>Width = Pump + Motor width + 1.5 m</li>
+  </ul>
+  <p><strong>Vertical Pumps:</strong></p>
+  <ul>
+    <li>Allow 2.5 m height clearance for vertical turbine pumps</li>
+    <li>Leave space for removal of motor or pump casing</li>
+  </ul>
+
+  <p><strong>📐 Example (for 750 GPM pump):</strong></p>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Item</th><th>Approx. Dimension</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Room length</td><td>4.5–6 meters</td></tr>
+      <tr><td>Room width</td><td>3.5–5 meters</td></tr>
+      <tr><td>Room height</td><td>2.5–3 meters</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 C. Pump Room Layout Elements</h3>
+  <p><strong>Must Contain:</strong></p>
+  <ul>
+    <li>Main fire pump</li>
+    <li>Diesel or electric driver</li>
+    <li>Jockey pump</li>
+    <li>Pump controllers</li>
+    <li>Pressure gauges</li>
+    <li>Relief valve and test line</li>
+    <li>Isolation valves</li>
+  </ul>
+
+  <p><strong>🖼️ Basic Layout (Text-Based):</strong></p>
+  <pre>
+ ----------------------------------------------------
+ |                                                  |
+ |  [Diesel Tank]   [Controller Panel]              |
+ |                                                  |
+ |  [Jockey Pump]   [Main Pump + Motor]             |
+ |                                                  |
+ |  [Discharge Pipe]   →   Wall with test header    |
+ ----------------------------------------------------
+  </pre>
+  <p>💡 Add floor markings for safe access paths and maintenance clearance zones.</p>
+
+  <h3>🔸 D. Ventilation and Cooling</h3>
+  <p><strong>For Electric Pumps:</strong> Natural or mechanical ventilation is acceptable. Room must stay above 4°C.</p>
+  <p><strong>For Diesel Pumps:</strong></p>
+  <ul>
+    <li>Fresh air intake and hot air exhaust with silencer</li>
+    <li>7.5–15 air changes/hour</li>
+    <li>Radiator ducting to outside</li>
+  </ul>
+
+  <h3>🔸 E. Drainage System</h3>
+  <ul>
+    <li>Floor slope toward a floor drain or sump pit</li>
+    <li>Drain to collection tank or safe outlet (not sewer)</li>
+    <li>No standing water allowed</li>
+  </ul>
+
+  <h3>🔸 F. Electrical and Safety Systems</h3>
+  <ul>
+    <li>Emergency lighting (battery-backed)</li>
+    <li>CO₂ or ABC type fire extinguishers</li>
+    <li>Earthing and bonding of equipment</li>
+    <li>Fire alarm panel connection</li>
+    <li>Manual override buttons on controller</li>
+  </ul>
+
+  <h3>🔍 Inspection Checklist (Quick Guide)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>✔️ Item</th><th>Checkpoint</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>🧱 Walls/door</td><td>2-hour fire rating</td></tr>
+      <tr><td>🔌 Power supply</td><td>Reliable + emergency backup</td></tr>
+      <tr><td>🌡️ Room temperature</td><td>> 4°C at all times</td></tr>
+      <tr><td>🔥 Diesel engine exhaust</td><td>Proper ducting + muffler</td></tr>
+      <tr><td>💡 Lighting</td><td>Normal + emergency source</td></tr>
+      <tr><td>🕳️ Floor drainage</td><td>Sloped with working drain</td></tr>
+      <tr><td>🚪 Access</td><td>External or protected hallway</td></tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Room Layout & Requirements</p>
+</section>
+
+<section id="section10" data-aos="fade-left">
+  <h2>🔥 Section 10: Fire Pump Controllers – Types, Wiring, Operation & NFPA Requirements</h2>
+  <p>Fire pump controllers are the brain of the system — responsible for starting, monitoring, and protecting the pump during emergencies. They must operate automatically and reliably, even during power loss or electrical faults.</p>
+
+  <h3>🔸 A. What is a Fire Pump Controller?</h3>
+  <p>A Fire Pump Controller is an electrical cabinet that:</p>
+  <ul>
+    <li>Receives pressure signals from the fire system.</li>
+    <li>Starts/stops the jockey pump and main fire pump.</li>
+    <li>Monitors system pressure, motor status, alarms, faults.</li>
+    <li>Ensures manual override is always possible.</li>
+  </ul>
+
+  <h3>🔸 B. Types of Fire Pump Controllers</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Type</th><th>Used For</th><th>Power Type</th><th>Typical Voltage</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Electric Motor Controller</td><td>Electric fire pump</td><td>AC power</td><td>380–480 V, 3-phase</td></tr>
+      <tr><td>Diesel Engine Controller</td><td>Diesel fire pump</td><td>DC (battery)</td><td>12V or 24V DC</td></tr>
+      <tr><td>Jockey Pump Controller</td><td>Jockey pump</td><td>AC power</td><td>220–380 V</td></tr>
+      <tr><td>Combination Controller</td><td>Electric + diesel</td><td>AC + DC</td><td>Mixed systems</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 C. NFPA 20 Requirements (Controller)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Parameter</th><th>NFPA 20 Requirement</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Automatic Start</td><td>Within 10 seconds of low pressure detection</td></tr>
+      <tr><td>Manual Control</td><td>Must always be available</td></tr>
+      <tr><td>Pressure Sensing</td><td>2 sensors for redundancy</td></tr>
+      <tr><td>Power Monitoring</td><td>Detects phase loss, reverse phase</td></tr>
+      <tr><td>Enclosure</td><td>NEMA 2 or 3R for indoor/outdoor</td></tr>
+      <tr><td>Lockout Prevention</td><td>Manual start must always work</td></tr>
+      <tr><td>Sequential Delay</td><td>To avoid jockey + fire pump overlap</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 D. Wiring Diagram Basics (Electric Motor Controller)</h3>
+  <pre>
+ ┌────────────────────┐
+ │  3-Phase Main Power│─────┐
+ └────────────────────┘     │
+                         [Circuit Breaker]
+                             ↓
+                       [Magnetic Contactor]
+                             ↓
+                     [Overload Relay / Trip]
+                             ↓
+                     [Electric Motor Starter]
+                             ↓
+                      → Fire Pump Motor
+                             ↓
+                     [Pressure Sensor Input]
+                             ↑
+           [Low Pressure → Start Signal Logic]
+                             ↓
+                Manual Start/Stop Pushbuttons
+  </pre>
+  <p>In diesel controller: replace motor starter with solenoid relay, and add battery charging circuit, crank control, and engine RPM feedback.</p>
+
+  <h3>🔸 E. Jockey Pump Controller Details</h3>
+  <ul>
+    <li>Smallest controller</li>
+    <li>Turns ON at low pressure (just below normal)</li>
+    <li>Turns OFF at high pressure (after recharge)</li>
+  </ul>
+  <p><strong>Example Pressure Settings:</strong></p>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Pump</th><th>Start Pressure</th><th>Stop Pressure</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Jockey Pump</td><td>120 psi</td><td>130 psi</td></tr>
+      <tr><td>Fire Pump</td><td>110 psi</td><td>Manual stop</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 F. Diesel Fire Pump Controller Features</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Feature</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Dual batteries</td><td>2 sets for redundancy (12V/24V)</td></tr>
+      <tr><td>Battery charger</td><td>Built-in to maintain charge</td></tr>
+      <tr><td>Weekly test timer</td><td>Auto cranking every week</td></tr>
+      <tr><td>RPM sensor</td><td>Confirms engine running</td></tr>
+      <tr><td>Crank cycle controller</td><td>Up to 6 crank attempts (15s ON/15s OFF)</td></tr>
+      <tr><td>Alarm outputs</td><td>Fail to start, overcrank, low fuel, etc.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 G. Controller Display/Monitoring Panel</h3>
+  <p><strong>Includes:</strong></p>
+  <ul>
+    <li>System pressure</li>
+    <li>Pump status (RUN/STOP)</li>
+    <li>Alarms (power loss, phase fail, etc.)</li>
+    <li>Event logs</li>
+    <li>Test mode/manual override</li>
+    <li>Modbus/BACnet for BMS integration</li>
+  </ul>
+
+  <h3>🔸 H. Common Controller Alarms</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Alarm</th><th>Possible Cause</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Phase failure</td><td>One line of power supply disconnected</td></tr>
+      <tr><td>Undervoltage</td><td>Poor voltage supply from source</td></tr>
+      <tr><td>Fail to start</td><td>Contactor/battery/pump jammed</td></tr>
+      <tr><td>Overcurrent trip</td><td>Short-circuit or pump overload</td></tr>
+      <tr><td>Pressure sensor error</td><td>Broken sensor or bad calibration</td></tr>
+      <tr><td>Engine fail to crank</td><td>Diesel – battery/panel/fuel issue</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔍 Lokesh’s Engineering Note:</h3>
+  <p>To comply with NFPA 20, fire pump controllers must be listed by UL/FM and be installed in the fire pump room itself — as close to the motor as practical.</p>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Controllers</p>
+</section>
+
+<section id="section11" data-aos="fade-up">
+  <h2>🔥 Section 11: Fire Pump Testing – Types, Procedures & Reports</h2>
+  <p>Regular fire pump testing ensures the system starts instantly, delivers required pressure, and complies with NFPA 25, NFPA 20, and local fire codes.</p>
+
+  <h3>🔸 A. Why Fire Pump Testing Is Critical</h3>
+  <ul>
+    <li>Confirms operational readiness</li>
+    <li>Detects mechanical/electrical failures early</li>
+    <li>Ensures compliance with insurance and fire code</li>
+    <li>Verifies system meets design flow and pressure</li>
+  </ul>
+
+  <h3>🔸 B. Types of Fire Pump Tests (as per NFPA 25)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Test Type</th><th>Frequency</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Weekly Run Test</td><td>Weekly (Diesel) / Monthly (Electric)</td><td>Confirms basic startup and operation</td></tr>
+      <tr><td>Annual Performance Test</td><td>Yearly</td><td>Full flow curve vs design specs</td></tr>
+      <tr><td>Controller Test</td><td>Monthly</td><td>Ensures control panel responds</td></tr>
+      <tr><td>Alarm Test</td><td>Monthly</td><td>Verifies alarms/trips</td></tr>
+      <tr><td>Battery Voltage Test</td><td>Monthly (Diesel)</td><td>Checks starting power availability</td></tr>
+      <tr><td>Fuel Level Check</td><td>Weekly (Diesel)</td><td>Maintain > 2/3 full tank</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 C. Weekly Run Test (Churn Test)</h3>
+  <p><strong>Procedure:</strong></p>
+  <ul>
+    <li>Turn OFF system valves to avoid water discharge</li>
+    <li>Run fire pump for minimum 10 minutes</li>
+    <li>Observe: Smooth start, no unusual noise/vibration, no leaks, stable pressure</li>
+  </ul>
+
+  <h4>🔸 Record Parameters:</h4>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Parameter</th><th>Normal Range</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Suction pressure</td><td>As per design</td></tr>
+      <tr><td>Discharge pressure</td><td>> Design pressure</td></tr>
+      <tr><td>Battery voltage (Diesel)</td><td>12/24 V steady</td></tr>
+      <tr><td>RPM (Diesel)</td><td>Stable (1800 or 3000)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 D. Annual Performance Test (Flow Test)</h3>
+  <p><strong>Purpose:</strong> A full flow test plots the actual pump performance curve (flow vs pressure) and compares to manufacturer's curve.</p>
+
+  <p><strong>🧪 Equipment Needed:</strong></p>
+  <ul>
+    <li>Flow meter or calibrated test header</li>
+    <li>Pressure gauges (suction/discharge)</li>
+    <li>Flow control valve</li>
+  </ul>
+
+  <p><strong>Procedure:</strong></p>
+  <ul>
+    <li>Open test header slowly</li>
+    <li>Record at 0%, 100%, and 150% flow:</li>
+    <ul>
+      <li>Flow (GPM)</li>
+      <li>Suction and discharge pressure</li>
+      <li>Net pressure = Discharge – Suction</li>
+    </ul>
+  </ul>
+
+  <p><strong>📈 Must satisfy:</strong></p>
+  <pre>
+Net Pressure(actual) ≥ 95% of Rated Net Pressure at 100% Flow
+  </pre>
+
+  <h4>🖼️ Example Data Table:</h4>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Test Point</th><th>Flow (GPM)</th><th>Suction (psi)</th><th>Discharge (psi)</th><th>Net Pressure (psi)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Churn</td><td>0</td><td>60</td><td>140</td><td>80</td></tr>
+      <tr><td>100%</td><td>750</td><td>55</td><td>130</td><td>75</td></tr>
+      <tr><td>150%</td><td>1125</td><td>50</td><td>110</td><td>60</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 E. Diesel Engine-Specific Checks</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Parameter</th><th>Normal Range</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Battery voltage</td><td>12.0 / 24.0 V</td></tr>
+      <tr><td>Oil pressure</td><td>30–60 psi</td></tr>
+      <tr><td>Coolant temp</td><td>70–90°C</td></tr>
+      <tr><td>Fuel tank level</td><td>> 2/3 full</td></tr>
+      <tr><td>Crank attempts</td><td>Max 6 (15s ON / 15s OFF)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 F. Test Report Format (Sample)</h3>
+  <pre>
+Fire Pump Test Report
+Date: ____________
+Location: ____________
+Technician: ____________
+
+Pump Type: _________    Rated Flow: _______ GPM
+Controller Type: ______ Rated Pressure: ____ psi
+
+Test 1 – Weekly Run:
+- Duration: ____ min
+- Pressure Stable: [Yes/No]
+- Alarms: ___________
+- Battery: _______ V
+
+Test 2 – Annual Flow Test:
+------------------------------------------------------------------------
+| Flow (GPM) | Suction (psi)  | Discharge (psi)  |  Net Pressure (psi) |
+|------------|----------------|------------------|---------------------|
+| 0          |                |                  |                     |
+| Rated      |                |                  |                     |
+| 150%       |                |                  |                     |
+------------------------------------------------------------------------
+Comments: ___________________________________
+
+Signature: ________________
+  </pre>
+
+  <h3>🔸 G. Common Issues Found During Testing</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Problem</th><th>Likely Cause</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Pump won’t start</td><td>Controller fault / battery issue</td></tr>
+      <tr><td>Low pressure</td><td>Clogged suction / worn impeller</td></tr>
+      <tr><td>Excess vibration</td><td>Misalignment or worn bearings</td></tr>
+      <tr><td>Diesel fails to crank</td><td>Weak batteries or faulty solenoid</td></tr>
+      <tr><td>Alarms not working</td><td>Sensor or wiring issue</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔍 Lokesh's Pro Tip:</h3>
+  <p>Keep testing logs for at least 3 years, and test at multiple flow points to catch early degradation in pump or pipework.</p>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Testing</p>
+</section>
+
+<section id="section12" data-aos="fade-left">
+  <h2>🔥 Section 12: Fire Pump Accessories – Valves, Gauges, Headers, Pipes, and Fittings</h2>
+  <p>A fire pump cannot function without the proper supporting accessories. These components ensure control, monitoring, and safe testing of the pump system.</p>
+  <p>This section covers each accessory, its function, placement, and applicable standards.</p>
+
+  <h3>🔸 A. Suction and Discharge Piping</h3>
+  <ul>
+    <li><strong>Suction Pipe:</strong> Should be short, straight, and oversized to avoid pressure loss or cavitation.</li>
+    <li><strong>Sizing Rule (per NFPA 20):</strong> Velocity ≤ 15 ft/s (≈ 4.5 m/s), preferably &lt; 3 m/s.</li>
+    <li><strong>Discharge Pipe:</strong> Carries pressurized water to system risers or test header. Must resist surge pressure. Use ductile iron, steel, or galvanized pipe (IS 1239 / ASTM A53 / NFPA 20).</li>
+  </ul>
+
+  <h3>🔸 B. Valves in Fire Pump Systems</h3>
+  <ul>
+    <li><strong>Gate Valve:</strong> OS&Y or NRS type, used for isolation on suction/discharge lines.</li>
+    <li><strong>Butterfly Valve:</strong> Compact isolation option, gear-operated preferred.</li>
+    <li><strong>Check Valve (NRV):</strong> Prevents reverse flow, placed after pump discharge.</li>
+    <li><strong>Relief Valve:</strong> Required for diesel systems, set ~10% above rated pressure.</li>
+    <li><strong>Test Line Valve:</strong> Simulates flow during testing, connects to drain/test header.</li>
+    <li><strong>Drain Valve:</strong> For maintenance/winterizing. Drains residual water.</li>
+  </ul>
+
+  <h3>🔸 C. Gauges and Monitoring Instruments</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Gauge Type</th><th>Location</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Suction Pressure Gauge</td><td>Pump suction line</td><td>Measures inlet pressure</td></tr>
+      <tr><td>Discharge Pressure Gauge</td><td>Pump discharge pipe</td><td>Measures system pressure</td></tr>
+      <tr><td>Compound Gauge</td><td>Suction side</td><td>Vacuum + pressure display</td></tr>
+      <tr><td>Flow Meter (optional)</td><td>Discharge/test loop</td><td>GPM or LPM reading</td></tr>
+      <tr><td>Hour Meter</td><td>Controller panel</td><td>Tracks runtime</td></tr>
+    </tbody>
+  </table>
+  <p>💡 All gauges must be glycerin-filled and rated ≥150% of pump pressure.</p>
+
+  <h3>🔸 D. Headers & Test Connections</h3>
+  <ul>
+    <li><strong>Test Header:</strong> Outside building, 2–6 outlets with hose valves for annual tests.</li>
+    <li><strong>Main Header / Riser:</strong> Connects fire pump to building sprinkler risers.</li>
+    <li><strong>Jockey Pump Header:</strong> Small pipe parallel to main discharge for pressure maintenance.</li>
+  </ul>
+
+  <h3>🔸 E. Flexible Connections and Vibration Isolators</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Component</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Flexible coupling</td><td>Absorbs thermal expansion and movement</td></tr>
+      <tr><td>Vibration isolator pads</td><td>Reduces noise and wear from motor vibration</td></tr>
+      <tr><td>Flexible suction joint</td><td>Prevents alignment stress on casing</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 F. Typical Pipe & Valve Arrangement Diagram (Text)</h3>
+  <pre>
+     Water Source (Tank/Well)
+               ↓
+          [Suction Pipe]
+               ↓
+        [Suction Gate Valve]
+               ↓
+         [Pump Inlet Flange]
+               ↓
+        [Pump Discharge Flange]
+               ↓
+             [Check Valve]
+               ↓
+        [Discharge Gate Valve]
+               ↓
+        ┌────→ [Test Header]
+        │
+     [Pressure Gauges]
+        │
+     [System Riser]
+  </pre>
+
+  <h3>🔸 G. Standards and Codes Reference</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Component</th><th>Standard</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Pipe material</td><td>IS 1239 / ASTM A53</td></tr>
+      <tr><td>Valves</td><td>IS 780 / UL/FM</td></tr>
+      <tr><td>Pressure gauges</td><td>EN 837 / IS 3624</td></tr>
+      <tr><td>Test header</td><td>NFPA 20 Sec 14.2</td></tr>
+      <tr><td>Relief valve</td><td>UL 1478</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔍 Lokesh’s Pro Tip:</h3>
+  <ul>
+    <li>✅ Always install tamper switches on all control valves.</li>
+    <li>✅ Use flow switches and test drain assemblies near zone controls.</li>
+    <li>✅ Follow hydraulic balancing between jockey and main pump.</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Accessories</p>
+</section>
+
+<section id="section13" data-aos="fade-up">
+  <h2>🔥 Section 13: Fire Pump Power Supply – Sizing, Backup, and Protection Schemes</h2>
+  <p>A fire pump is useless without reliable power. NFPA 20 mandates that the power supply must be stable, independent, and immune to failures that affect non-emergency systems.</p>
+
+  <h3>🔸 A. NFPA 20 Power Supply Requirements</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Requirement</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Reliable power</td><td>From utility OR generator, not shared with non-fire loads</td></tr>
+      <tr><td>Dedicated feeder</td><td>Must not go through building panels</td></tr>
+      <tr><td>Separate circuit breaker</td><td>Locked ON, visible, labeled "FIRE PUMP"</td></tr>
+      <tr><td>ATS bypass</td><td>Must run even if ATS fails (optional bypass)</td></tr>
+      <tr><td>Diesel pumps</td><td>Independent fuel source + dual batteries</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 B. Electric Fire Pump Power Supply</h3>
+  <h4>1. Voltage Ratings</h4>
+  <ul>
+    <li>3-Phase: 380V / 400V / 415V (India/UK)</li>
+    <li>3-Phase: 460V / 480V (USA)</li>
+    <li>Frequency: 50 Hz or 60 Hz</li>
+  </ul>
+
+  <h4>2. Feeder Sizing Formula</h4>
+  <pre>
+I = P / (√3 × V × η × PF)
+
+Where:
+I = Current (A)
+P = Power (W)
+V = Voltage (V)
+η = Efficiency (0.85–0.9)
+PF = Power Factor (≈ 0.9)
+  </pre>
+
+  <p><strong>🧮 Example:</strong> A 55 kW pump at 415V:</p>
+  <pre>
+I = 55000 / (√3 × 415 × 0.9 × 0.9) ≈ 94.5 A
+Add 25% margin ⇒ Cable rated for ~120 A
+  </pre>
+
+  <h3>🔸 C. Protection Devices (Electric Pumps)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Device</th><th>Function</th><th>NFPA Rule</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Circuit Breaker (CB)</td><td>Protects from short-circuit</td><td>Must not trip during start</td></tr>
+      <tr><td>Overload Relay</td><td>Trip on high current</td><td>Must not stop fire pump</td></tr>
+      <tr><td>Locked Rotor Alarm</td><td>Detects failure to start</td><td>Alarm only (no trip)</td></tr>
+      <tr><td>Surge Arrestor</td><td>Protects from voltage spikes</td><td>Recommended</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 D. Diesel Engine Power Supply (DC)</h3>
+  <h4>🔹 Battery System</h4>
+  <ul>
+    <li>Two independent banks (12V or 24V)</li>
+    <li>15 minutes minimum cranking capacity</li>
+    <li>AC to DC battery chargers in controller</li>
+  </ul>
+
+  <h4>🔹 Diesel Tank Sizing</h4>
+  <pre>
+Tank Volume (L) = Engine Fuel Rate (L/hr) × 8 hrs
+Example: 12 L/hr × 8 = 96 L (minimum)
+NFPA recommends > 2.5× expected runtime
+  </pre>
+
+  <h3>🔸 E. Generator Backup (Optional)</h3>
+  <ul>
+    <li>Start in &lt; 10 seconds</li>
+    <li>Dedicated or reserved capacity</li>
+    <li>Manual bypass if ATS fails</li>
+  </ul>
+  <p><strong>🔹 Generator Sizing Formula:</strong></p>
+  <pre>
+kVA = (kW / PF) × 1.25
+Assume PF = 0.85
+  </pre>
+
+  <h3>🔸 F. Wiring Layout – Typical Schematic</h3>
+  <pre >
+Utility Power
+     │
+ [Main Feeder CB] (locked ON)
+     │
+[Dedicated Fire Pump Panel]
+     │
+[Manual Motor Starter]
+     │
+[Fire Pump Motor]
+     ↓
+Controller monitors: Voltage, Current, Phase, Start signal
+  </pre>
+
+  <h3>🔸 G. Earthing and Bonding</h3>
+  <ul>
+    <li>Pump frame, controller, piping must be bonded to earth</li>
+    <li>Resistance to earth: &lt; 5 ohms (ideal &lt; 1Ω)</li>
+    <li>Use dedicated earth pit if building earth is poor</li>
+  </ul>
+
+  <h3>🔸 H. Redundancy Best Practices</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Redundant Component</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Dual diesel batteries</td><td>Ensures reliable engine start</td></tr>
+      <tr><td>Generator + Utility</td><td>Redundant electric power</td></tr>
+      <tr><td>Dual controllers</td><td>For critical systems</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔍 Lokesh's Inspection Tips:</h3>
+  <ul>
+    <li>✅ Check breaker lock & labeling</li>
+    <li>✅ Verify battery voltage monthly</li>
+    <li>✅ Test generator weekly (if installed)</li>
+    <li>✅ Use thermal imaging for yearly cable inspection</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Power Supply</p>
+</section>
+
+<section id="section14" data-aos="fade-right">
+  <h2>🔥 Section 14: Fire Pump Installation Guidelines – Civil, Electrical, and Mechanical Works</h2>
+  <p>Proper installation of a fire pump is crucial to ensure performance, safety, and code compliance. This section covers structural setup, mounting, pipework, cabling, and more — as per NFPA 20, IS standards, and practical engineering practice.</p>
+
+  <h3>🔸 A. Fire Pump Room (Pump House) Requirements</h3>
+  <h4>🔹 1. Location & Accessibility</h4>
+  <ul>
+    <li>Ground floor or basement with direct access</li>
+    <li>Separate fire-rated room (minimum 2 hours)</li>
+    <li>Not used for storage</li>
+    <li>Allow engine removal and maintenance access</li>
+  </ul>
+
+  <h4>🔹 2. Ventilation & Drainage</h4>
+  <ul>
+    <li>Natural or forced ventilation (required for diesel)</li>
+    <li>Exhaust fans (≥1 air change/minute for diesel)</li>
+    <li>Floor sloped to drain channel or sump pit</li>
+  </ul>
+
+  <h4>🔹 3. Clearance</h4>
+  <ul>
+    <li>Minimum 900 mm (3 ft) around pump</li>
+    <li>Overhead space for lifting tools</li>
+    <li>Emergency and regular lighting</li>
+  </ul>
+
+  <h4>🔹 4. Protection</h4>
+  <ul>
+    <li>No hazardous piping above equipment</li>
+    <li>Room must remain dry and flood-free</li>
+    <li>Exhaust from diesel ducted and insulated</li>
+  </ul>
+
+  <h3>🔸 B. Civil Foundations and Mounting</h3>
+  <ul>
+    <li><strong>Base Frame:</strong> Common for pump and driver, anchored to concrete</li>
+    <li><strong>Foundation Thickness Rule:</strong></li>
+  </ul>
+  <pre>
+Foundation Thickness = ½ × (Pump + Motor Height)
+  </pre>
+  <ul>
+    <li><strong>Vibration Isolation:</strong> Rubber pads or springs</li>
+    <li><strong>Leveling:</strong> Use shims; max deviation ±1 mm</li>
+  </ul>
+
+  <h3>🔸 C. Mechanical Installation (Pump + Pipework)</h3>
+  <ul>
+    <li><strong>Suction:</strong> Eccentric reducer flat side on top, 10×D straight pipe, no elbow at flange</li>
+    <li><strong>Discharge:</strong> Check valve → Gate valve → Test header branch</li>
+    <li><strong>Jockey Pump:</strong> Parallel piping, check valve on discharge, isolation valves</li>
+    <li><strong>Flexible Connections:</strong> On both suction and discharge; expansion joints if >10 m</li>
+  </ul>
+
+  <h3>🔸 D. Electrical Works and Cable Management</h3>
+  <ul>
+    <li><strong>Feeder:</strong> Direct cable from main panel to controller</li>
+    <li><strong>No fuses or junctions in path</strong></li>
+  </ul>
+
+  <h4>🔹 Cable Sizing Formula</h4>
+  <pre>
+A = (I × L) / (k × Vd)
+
+Where:
+A = Cross-section (mm²)
+I = Current (A)
+L = Length (m)
+k = 226 (for copper)
+Vd = Voltage drop (acceptable: 3–5%)
+  </pre>
+  <p>Use proper tray, glands, and earthing at terminations.</p>
+
+  <h3>🔸 E. Diesel Engine Specific Installation</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Component</th><th>Installation Requirement</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Exhaust</td><td>Insulated and ducted outdoors</td></tr>
+      <tr><td>Batteries</td><td>Secured, vented racks</td></tr>
+      <tr><td>Fuel tank</td><td>On concrete pad with vent pipe</td></tr>
+      <tr><td>Silencer</td><td>Noise &lt;85 dB, mounted securely</td></tr>
+      <tr><td>Cooling (if heat exchanger)</td><td>Functional raw water or air loop</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 F. Controller & Panel Mounting</h3>
+  <ul>
+    <li>Mounted on wall or stand, near the pump</li>
+    <li>Protection: IP55/NEMA 4 enclosure with gasketed door</li>
+    <li>No water splash zone exposure</li>
+  </ul>
+
+  <h3>🔸 G. Painting & Labeling</h3>
+  <ul>
+    <li>Valves: Painted red, tagged with function</li>
+    <li>Pipes: Labeled with flow direction and purpose</li>
+    <li>Panel: Nameplate and wiring diagram required</li>
+  </ul>
+
+  <h3>🔸 H. Checklists Before Commissioning</h3>
+
+  <p><strong>✅ Civil:</strong></p>
+  <ul>
+    <li>Floor slope/drain checked</li>
+    <li>Base grouted and level</li>
+    <li>Walls sealed from leakage</li>
+  </ul>
+
+  <p><strong>✅ Mechanical:</strong></p>
+  <ul>
+    <li>Pipes supported per IS 1239 spacing</li>
+    <li>Valves checked (open/closed)</li>
+    <li>Coupling aligned: ≤0.05 mm (dial gauge)</li>
+  </ul>
+
+  <p><strong>✅ Electrical:</strong></p>
+  <ul>
+    <li>Continuity and insulation test passed</li>
+    <li>Breaker locked ON</li>
+    <li>Voltage at terminal confirmed</li>
+  </ul>
+
+  <p><strong>✅ Diesel:</strong></p>
+  <ul>
+    <li>Fuel tank ≥ 2/3 full</li>
+    <li>Batteries: 12V or 24V tested</li>
+    <li>Exhaust fully connected</li>
+  </ul>
+
+  <h3>🔍 Lokesh’s Bonus Tip:</h3>
+  <ul>
+    <li>Cold alignment before operation</li>
+    <li>Hot alignment after 1 hour run</li>
+    <li>Use feeler gauges and shims for accurate coupling</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Installation Guidelines</p>
+</section>
+
+<section id="section15" data-aos="fade-left">
+  <h2>🔥 Section 15: Fire Pump Commissioning – Procedures, Checklists, and Common Issues</h2>
+  <p>Commissioning is the final validation that the fire pump operates per design intent, NFPA 20, and local fire regulations. It includes physical checks, performance tests, and system verification.</p>
+
+  <h3>🔸 A. Pre-Commissioning Checks (Before Start-Up)</h3>
+
+  <p><strong>✅ Visual & Physical Inspection</strong></p>
+  <ul>
+    <li>Pump/motor clean, undamaged</li>
+    <li>All bolts/fittings tight</li>
+    <li>Pipe supports installed</li>
+    <li>Room clean, dry, ventilated</li>
+  </ul>
+
+  <p><strong>✅ Mechanical Alignment</strong></p>
+  <ul>
+    <li>Axial misalignment ≤ 0.1 mm</li>
+    <li>Angular misalignment ≤ 0.2 mm</li>
+  </ul>
+
+  <p><strong>✅ Electrical</strong></p>
+  <ul>
+    <li>Voltage ±5% of rated</li>
+    <li>Insulation ≥ 1 MΩ (megger)</li>
+    <li>Breaker locked ON</li>
+  </ul>
+
+  <p><strong>✅ Diesel Engine</strong></p>
+  <ul>
+    <li>Fuel ≥ 2/3 full</li>
+    <li>Battery voltage ~12.5V / 25V</li>
+    <li>Cooling system filled</li>
+  </ul>
+
+  <h3>🔸 B. First Time Start-Up Sequence</h3>
+  <ol>
+    <li><strong>Jockey Pump Test:</strong> Auto ON/OFF based on pressure; set ~6.5–7 bar</li>
+    <li><strong>Main Pump Manual Start:</strong> Run to confirm rotation, sound, gauge rise</li>
+    <li><strong>Diesel Pump Manual Start:</strong> Confirm crank time, RPM, and pressure</li>
+  </ol>
+
+  <h3>🔸 C. Performance Test (Flow + Pressure Testing)</h3>
+  <p>As required by <strong>NFPA 20 Sec 14.2.6</strong> and <strong>IS 15301</strong>.</p>
+  <ul>
+    <li>Open test header, connect gauges and nozzles</li>
+    <li>Record pressure at 0%, 100%, 150% flow</li>
+  </ul>
+
+  <p><strong>🔹 Flow Calculation (Pitot Tube):</strong></p>
+  <pre>
+Q = 29.84 × C<sub>d</sub> × d² × √P
+
+Where:
+Q = Flow (GPM)
+C<sub>d</sub> = Nozzle coefficient (0.97 typical)
+d = Diameter (inches)
+P = Pitot pressure (psi)
+  </pre>
+
+  <h3>🔸 D. Acceptance Criteria (NFPA/IS Standard)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Test Point</th><th>Pressure Tolerance</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>100% flow</td><td>±5% of rated pressure</td></tr>
+      <tr><td>150% flow</td><td>≥ 65% of rated pressure</td></tr>
+      <tr><td>Shutoff (0% flow)</td><td>≤ 140% of rated pressure</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 E. Controller Test</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Function</th><th>Test Procedure</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Auto Start</td><td>Close valve to drop pressure</td></tr>
+      <tr><td>Manual Start</td><td>Use local panel button</td></tr>
+      <tr><td>Remote Start</td><td>Trigger from fire panel (if connected)</td></tr>
+      <tr><td>Battery Charger</td><td>Simulate mains fail – test continuity</td></tr>
+      <tr><td>Alarm Circuit</td><td>Pull fuse or disconnect phase</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 F. Checklist Template (Lokesh Format)</h3>
+  <pre >
+Item                     Status (✔/✘)   Remarks
+Pump base grouted         ✔             OK
+Coupling aligned (hot)    ✔             Within limits
+Suction valve open        ✔
+Flow test at 100%         ✔             7.2 bar @ 2850 LPM
+Flow test at 150%         ✔             4.9 bar @ 4275 LPM
+Controller alarm test     ✔             All signals OK
+Battery voltage (diesel)  ✔             12.8V
+  </pre>
+
+  <h3>🔸 G. Common Issues & Troubleshooting</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Symptom</th><th>Likely Cause</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Low pressure</td><td>Air lock, suction issue, wrong rotation</td></tr>
+      <tr><td>Diesel won't start</td><td>Battery weak, fuel clog, glow plug fail</td></tr>
+      <tr><td>Vibration</td><td>Misalignment, cavitation, loose base</td></tr>
+      <tr><td>Frequent jockey run</td><td>Leak or drifted pressure switch</td></tr>
+      <tr><td>No auto start</td><td>Sensor fault, wiring issue, wrong setting</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔍 Lokesh’s Field Tips:</h3>
+  <ul>
+    <li>✅ Recheck coupling alignment after first run</li>
+    <li>✅ Record pressures before, during, and after test</li>
+    <li>✅ Take photos or videos for audit trail</li>
+    <li>✅ Inspect the pressure relief line after every full test</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Commissioning</p>
+</section>
+
+<section id="section16" data-aos="fade-up">
+  <h2>🔥 Section 16: Fire Pump Maintenance – Daily, Monthly, and Annual Activities</h2>
+  <p>Fire pumps sit idle most of the time, but must start instantly during emergencies. Regular maintenance ensures readiness, prevents failure, and complies with NFPA 25 and IS 15301.</p>
+
+  <h3>🔸 A. Overview of Fire Pump Maintenance Categories</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Frequency</th><th>Tasks Performed</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Daily</td><td>Visual inspection, pressure checks, record readings</td></tr>
+      <tr><td>Weekly</td><td>Test runs (electric/diesel), auto-start verification</td></tr>
+      <tr><td>Monthly</td><td>Battery test, alarm test, controller checks</td></tr>
+      <tr><td>Quarterly</td><td>Flow meter calibration, gland packing check</td></tr>
+      <tr><td>Annually</td><td>Full performance test, insulation test, alignment</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 B. Daily Maintenance Checklist (Operator)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Task</th><th>OK?</th><th>Remarks</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Room clean and dry</td><td>✅</td><td></td></tr>
+      <tr><td>No leakage from pump/pipes</td><td>✅</td><td></td></tr>
+      <tr><td>Suction/discharge pressure</td><td>✅</td><td>7.2 bar / 8.1 bar</td></tr>
+      <tr><td>Jockey pump status</td><td>✅</td><td>Auto ON/OFF tested</td></tr>
+      <tr><td>Diesel fuel ≥ 2/3</td><td>✅</td><td>78% full</td></tr>
+      <tr><td>Controller display</td><td>✅</td><td>Green LED on</td></tr>
+    </tbody>
+  </table>
+  <p>📘 Log readings daily and retain for at least 2 years.</p>
+
+  <h3>🔸 C. Weekly Test (Run Test)</h3>
+  <ul>
+    <li><strong>Electric Pump:</strong> Run manually for 10 minutes, check pressure, sound, vibration</li>
+    <li><strong>Diesel Pump:</strong> Run for 30 minutes</li>
+  </ul>
+  <p><strong>Observe:</strong> RPM ~2900, exhaust clean, oil 2.5–6 bar, temp 70–90°C</p>
+  <p>⚠️ Must start in &lt; 10 seconds!</p>
+
+  <h3>🔸 D. Monthly Maintenance Tasks</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Item</th><th>Method</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Battery voltage</td><td>Measure with multimeter</td></tr>
+      <tr><td>Controller test</td><td>Simulate alarm, verify response</td></tr>
+      <tr><td>Float switch</td><td>Simulate high/low level</td></tr>
+      <tr><td>Terminal tightness</td><td>Inspect and tighten</td></tr>
+      <tr><td>Drain line</td><td>Pour water, check outlet</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 E. Quarterly Tasks</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Item</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Packing gland</td><td>Check leakage (≤10 drops/min)</td></tr>
+      <tr><td>Coupling</td><td>Check rust/wear</td></tr>
+      <tr><td>Fuel quality</td><td>Smell, sample test</td></tr>
+      <tr><td>Pipe supports</td><td>No sag or corrosion</td></tr>
+      <tr><td>Exhaust backpressure</td><td>&lt; 3 kPa per spec</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 F. Annual Maintenance (Comprehensive)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Task</th><th>Method/Standard</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Full Flow Test</td><td>NFPA 25 / IS 15301</td></tr>
+      <tr><td>Insulation test</td><td>Megger ≥ 1 MΩ</td></tr>
+      <tr><td>Controller calibration</td><td>Check pressure switches, timers</td></tr>
+      <tr><td>Bearing lubrication</td><td>Grease per spec</td></tr>
+      <tr><td>Fuel filter change</td><td>Every 12 months</td></tr>
+      <tr><td>Fuel tank clean</td><td>Drain and inspect</td></tr>
+      <tr><td>Pipe thickness</td><td>Ultrasonic thickness test</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 G. Lubrication Schedule</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Component</th><th>Frequency</th><th>Lubricant Type</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Pump bearings</td><td>Every 3–6 mo</td><td>Lithium grease (NLGI-2)</td></tr>
+      <tr><td>Diesel engine oil</td><td>Every 6 mo or 250 hrs</td><td>SAE 15W-40</td></tr>
+      <tr><td>Greased coupling</td><td>Every 6 mo</td><td>Multipurpose grease</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 H. Maintenance Logs – Sample Format</h3>
+  <pre>
+ ------------------------------------------------------------------------------------
+ |Date      | Task             | Performed by | Remarks                             |
+ |-----------------------------------------------------------------------------------
+ |13-Jun-25 | Diesel test run  | Lokesh       | OK, 82°C, 5 bar oil pressure        |
+ |13-Jun-25 | Battery check    | Lokesh       | 12.6V, connections tight            |
+ |12-Jun-25 | Pressure reading | Lokesh       | Suction: 7.1 bar, Discharge: 8.0 bar|
+ ------------------------------------------------------------------------------------
+  </pre>
+  <p>📁 Keep digital and physical records available for audits.</p>
+
+  <h3>🔍 Lokesh’s Pro Tips:</h3>
+  <ul>
+    <li>✅ Test both auto and manual start every time</li>
+    <li>✅ Listen for odd sounds or smells</li>
+    <li>✅ Label all switches and valves clearly</li>
+    <li>✅ Keep spares: batteries, relays, fuel filters</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Maintenance</p>
+</section>
+
+<section id="section17" data-aos="fade-up">
+  <h2>🔥 Section 17: Fire Pump Troubleshooting – Symptoms, Root Causes, and Fixes</h2>
+  <p>Even well-maintained fire pumps can encounter issues. This guide covers the most common problems, root causes, and quick fixes for electric and diesel pumps.</p>
+
+  <h3>🔸 A. Troubleshooting Table – At a Glance</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Symptom</th><th>Likely Cause</th><th>Action/Fix</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Pump doesn’t start (electric)</td><td>No power, breaker trip</td><td>Check power, controller, fuses</td></tr>
+      <tr><td>Pump doesn’t start (diesel)</td><td>Low battery, no fuel</td><td>Check voltage, cranking, fuel</td></tr>
+      <tr><td>Low discharge pressure</td><td>Clogged suction, worn impeller</td><td>Clean filter, inspect impeller</td></tr>
+      <tr><td>Excessive vibration</td><td>Misalignment, loose base</td><td>Align, tighten bolts, inspect suction</td></tr>
+      <tr><td>Jockey pump starts often</td><td>System leak, switch drift</td><td>Leak check, calibrate switch</td></tr>
+      <tr><td>Diesel cranks but won’t fire</td><td>Airlock, fuel blockage</td><td>Bleed fuel, clean injector</td></tr>
+      <tr><td>Pump runs, no flow</td><td>Closed valve, dry suction</td><td>Open valve, check water source</td></tr>
+      <tr><td>Black smoke (diesel)</td><td>Clogged air filter, overload</td><td>Clean air filter, reduce load</td></tr>
+      <tr><td>Controller shows fault</td><td>Sensor or wire issue</td><td>Check wiring, reset switch</td></tr>
+      <tr><td>Battery charger off</td><td>Blown fuse, AC lost</td><td>Replace fuse, check mains</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 B. Flowchart: Electric Pump Won’t Start</h3>
+  <pre>
+      Pump Not Starting
+             ↓
+  Is power available at terminals?
+           /    \
+         No      Yes
+        ↓         ↓
+  Check breaker   Is controller ON?
+      or mains      /     \
+                   No      Yes
+                   ↓        ↓
+         Close breaker   Manual Start?
+                             ↓
+                      If Yes → Starter OK?
+                             ↓
+                      If No → Faulty relay/contactor
+  </pre>
+
+  <h3>🔸 C. Troubleshooting with a Pressure Gauge</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Observation</th><th>Diagnosis</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Pressure drops slowly</td><td>Minor leak or valve open</td></tr>
+      <tr><td>Pressure drops rapidly</td><td>Major system leak</td></tr>
+      <tr><td>Fluctuating pressure</td><td>Air in pipe, bad check valve</td></tr>
+      <tr><td>Pressure rise is slow</td><td>Undersized or damaged pump</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 D. Diesel Pump Specific Issues</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Symptom</th><th>Checkpoints</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Slow crank</td><td>Weak battery, terminals corroded</td></tr>
+      <tr><td>Loud knocking</td><td>Timing issue or wear</td></tr>
+      <tr><td>Overheating</td><td>Low coolant or clogged loop</td></tr>
+      <tr><td>Cranks but no start</td><td>Fuel solenoid, airlock</td></tr>
+      <tr><td>White smoke</td><td>Cold engine, injector leak</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 E. Using Amp Clamp for Diagnosis (Electric Pump)</h3>
+  <p>Measure startup vs running current:</p>
+  <ul>
+    <li><strong>Startup Current:</strong> 5–7× full-load current</li>
+    <li><strong>Running Current:</strong> Must match nameplate</li>
+    <li><strong>Overload Warning:</strong></li>
+  </ul>
+  <pre>
+If I<sub>measured</sub> > I<sub>rated</sub> ⇒ Possible overload or imbalance
+  </pre>
+
+  <h3>🔸 F. Suction Issues – How to Spot Cavitation</h3>
+  <ul>
+    <li>🔊 Gravel sound from pump casing</li>
+    <li>📉 Drop in pressure</li>
+    <li>📈 Increased vibration</li>
+  </ul>
+  <p><strong>Causes:</strong></p>
+  <ul>
+    <li>High suction lift</li>
+    <li>Vacuum leak in pipe</li>
+    <li>Strainer blocked</li>
+  </ul>
+  <p><strong>Fix:</strong> Reduce lift, seal joints, clean strainer</p>
+
+  <h3>🔸 G. Alignment Issues – Quick Check Without Dial Gauge</h3>
+  <ul>
+    <li>Use feeler gauge at 90° intervals on the coupling</li>
+    <li><strong>Tolerance:</strong> ≤ 0.05 mm cold / ≤ 0.1 mm hot</li>
+    <li>Keep a shim kit for quick correction</li>
+  </ul>
+
+  <h3>🔸 H. Controller Error Codes (Typical Examples)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Code</th><th>Meaning</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>E01</td><td>Phase loss</td><td>Check incoming power</td></tr>
+      <tr><td>E05</td><td>Overcurrent</td><td>Inspect motor/starter</td></tr>
+      <tr><td>F1</td><td>Pressure switch open</td><td>Test/replace sensor</td></tr>
+      <tr><td>BATT LOW</td><td>Battery < 12V</td><td>Recharge or replace</td></tr>
+      <tr><td>AUTO OFF</td><td>Manual override ON</td><td>Switch to AUTO mode</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔍 Lokesh’s Practical Field Tips:</h3>
+  <ul>
+    <li>✅ Always carry: multimeter, amp clamp, gauge, cloth, spare fuel</li>
+    <li>✅ Listen with a screwdriver/stethoscope to detect cavitation</li>
+    <li>✅ Check suction with compound gauge for vacuum leaks</li>
+    <li>✅ Address even small leaks quickly</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Troubleshooting</p>
+</section>
+
+<section id="section18" data-aos="fade-left">
+  <h2>🔥 Section 18: Fire Pump System Components – Valves, Pipes, Sensors, and Panels</h2>
+  <p>Understanding each component around the fire pump is essential for troubleshooting, system design, and efficient maintenance. Here's a breakdown of all major system parts and how they function.</p>
+
+  <h3>🔸 A. Valves in Fire Pump Systems</h3>
+  <ul>
+    <li><strong>1. Suction Gate Valve:</strong> Isolates water supply before the pump. Material: Cast/Ductile Iron. Always fully open.</li>
+    <li><strong>2. Discharge Gate Valve:</strong> For isolation after pump. Not for throttling.</li>
+    <li><strong>3. Check Valve:</strong> Prevents backflow. Install after discharge gate. Minimum 10D distance.</li>
+    <li><strong>4. Pressure Relief Valve:</strong> Set to ~140% rated pressure. Must discharge safely to drain.</li>
+    <li><strong>5. Test Line Valve:</strong> Opens path to test header for flow performance testing.</li>
+  </ul>
+
+  <h3>🔸 B. Piping</h3>
+  <h4>🔹 Material Options</h4>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Material</th><th>Use Area</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>GI (Galvanized Iron)</td><td>Branch lines, above-ground</td><td>Rusts in harsh water</td></tr>
+      <tr><td>MS (Mild Steel)</td><td>Main lines</td><td>Needs paint or coating</td></tr>
+      <tr><td>HDPE / PVC</td><td>Underground suction</td><td>Pressure-rated, non-metallic</td></tr>
+      <tr><td>SS (Stainless Steel)</td><td>Corrosive areas</td><td>Expensive, durable</td></tr>
+    </tbody>
+  </table>
+
+  <h4>🔹 Pipe Sizing Formula</h4>
+  <pre>
+Q = A × V  or  A = Q / V
+
+Where:
+Q = Flow rate (m³/s)
+A = Cross-sectional area (m²)
+V = Velocity (m/s)
+
+✅ Design Velocities:
+Suction ≤ 3 m/s
+Discharge ≤ 5 m/s
+  </pre>
+
+  <h3>🔸 C. Pressure Gauges</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Type</th><th>Location</th><th>Range</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Glycerin-filled</td><td>Suction/Discharge line</td><td>0–16 bar or psi</td></tr>
+      <tr><td>Compound gauge</td><td>Suction (vacuum)</td><td>-1 to +10 bar</td></tr>
+    </tbody>
+  </table>
+  <p>✅ Use with snubber + isolation ball valve to reduce surge damage.</p>
+
+  <h3>🔸 D. Sensors & Switches</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Device</th><th>Function</th><th>Example Setpoint</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Pressure switch</td><td>Auto start/stop based on pressure</td><td>6.5–7 bar</td></tr>
+      <tr><td>Flow switch</td><td>Detects water movement</td><td>Sprinkler flow</td></tr>
+      <tr><td>Float switch</td><td>Monitors tank level</td><td>Low/overflow</td></tr>
+      <tr><td>Fuel level sensor</td><td>Diesel tank monitoring</td><td>&gt;33% (min.)</td></tr>
+      <tr><td>Temperature sensor</td><td>Shutdown on overheat</td><td>&gt;95°C</td></tr>
+      <tr><td>Oil pressure sensor</td><td>Detects diesel engine lubrication</td><td>&lt;2 bar triggers alarm</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 E. Fire Pump Control Panel</h3>
+  <ul>
+    <li>Auto/Manual Selector</li>
+    <li>Start/Stop Push Buttons</li>
+    <li>Battery Charger (Diesel)</li>
+    <li>Alarm Indicators: Phase Loss, Battery Low, Pressure Fault</li>
+  </ul>
+  <p><strong>Internal Protection Includes:</strong></p>
+  <ul>
+    <li>MCB/MCCB</li>
+    <li>Contactor & Overload Relay</li>
+    <li>Phase sequence & timer relay</li>
+  </ul>
+  <p>✅ Enclosure should be IP55 or NEMA 4 minimum and clearly labeled.</p>
+
+  <h3>🔸 F. Test Header Assembly</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background:#eee;">
+      <tr><th>Component</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Flow test line</td><td>Diverts water during test</td></tr>
+      <tr><td>Nozzle/Orifice plate</td><td>Creates known flow for testing</td></tr>
+      <tr><td>Pitot tube</td><td>Measures velocity pressure</td></tr>
+      <tr><td>Drain pipe</td><td>Discharges test water safely</td></tr>
+    </tbody>
+  </table>
+
+  <h4>🔹 Flow Formula</h4>
+  <pre>
+Q = 29.84 × C<sub>d</sub> × d² × √P
+
+Where:
+Q = Flow (GPM)
+C<sub>d</sub> = Coefficient (~0.97)
+d = Nozzle diameter (inches)
+P = Pitot pressure (psi)
+  </pre>
+
+  <h3>🔸 G. Relief Line Assembly (Diesel Pumps)</h3>
+  <p>Used to drain excess fluids from engine systems safely.</p>
+  <ul>
+    <li>✅ Discharge all drains to outside sump or safe channel</li>
+    <li>✅ Use spark traps or flame arrestors on diesel exhaust lines</li>
+  </ul>
+
+  <h3>🔍 Lokesh’s Inspection Tips:</h3>
+  <ul>
+    <li>✅ Every valve must be tagged with name and function</li>
+    <li>✅ Verify flow switch wiring continuity with multimeter</li>
+    <li>✅ Use PVC or GI sleeve on bends to avoid corrosion</li>
+    <li>✅ Confirm exhaust pipe insulation is intact (diesel only)</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump System Components</p>
+</section>
+
+<section id="section19" data-aos="fade-right">
+  <h2>🔥 Section 19: Fire Pump Room Layout – Design, Space, and Access Requirements</h2>
+  <p>The fire pump room is the command center of your protection system. Its layout must ensure safety, functionality, and full compliance with NFPA 20 and IS 13039.</p>
+
+  <h3>🔸 A. General Design Guidelines</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Requirement</th><th>Recommended Standard</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Room type</td><td>Dedicated fire pump room only</td></tr>
+      <tr><td>Clearance</td><td>≥ 1 m around all equipment</td></tr>
+      <tr><td>Floor</td><td>Non-slip, drainable, 150 mm above FFL</td></tr>
+      <tr><td>Lighting</td><td>Min. 150 lux, 2× tube lights</td></tr>
+      <tr><td>Ventilation</td><td>Natural or mechanical (esp. diesel)</td></tr>
+      <tr><td>Access</td><td>1 m wide direct exterior door</td></tr>
+      <tr><td>Fire separation</td><td>2-hour fire-rated walls/door</td></tr>
+      <tr><td>Waterproofing</td><td>Sloped floor, proper drainage</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 B. Pump Room Size Calculation</h3>
+  <p><strong>➤ Rule of Thumb:</strong></p>
+  <pre>
+Room Length = Pump Skid Length + 2 × 1m clearance
+Room Width  = Pump Skid Width  + 2 × 1m clearance
+  </pre>
+  <p><strong>📐 Example:</strong> Skid size: 2.2 m × 1.5 m ⇒ Room = 4.2 m × 3.5 m minimum</p>
+  <p>Add extra 1.5 m for test header or jockey pump clearance if nearby.</p>
+
+  <h3>🔸 C. Fire Pump Foundation and Alignment</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Item</th><th>Details</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Foundation height</td><td>300–500 mm above floor</td></tr>
+      <tr><td>Grouting</td><td>Cement-sand mix or epoxy compound</td></tr>
+      <tr><td>Anchor bolts</td><td>Embedded in RCC pad</td></tr>
+      <tr><td>Vibration pads</td><td>Recommended for diesel units</td></tr>
+      <tr><td>Alignment</td><td>Use dial or feeler gauge</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 D. Ventilation Requirements (Especially Diesel)</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Component</th><th>Requirement</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Air intake</td><td>Louver sized as per engine spec (~1.5–2 m²)</td></tr>
+      <tr><td>Exhaust outlet</td><td>Must exit outdoors, insulated</td></tr>
+      <tr><td>Ventilation</td><td>Cross-ventilation preferred</td></tr>
+      <tr><td>Temp control</td><td>Room temp ≤ 40°C at standby</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 E. Access & Security</h3>
+  <ul>
+    <li><strong>Dedicated Entrance:</strong> External steel door (minimum 1 m wide)</li>
+    <li><strong>Access Control:</strong> Keyed for authorized personnel only</li>
+    <li><strong>Signage:</strong> “Fire Pump Room – Authorized Only”</li>
+    <li><strong>Emergency Lighting:</strong> With battery backup</li>
+    <li><strong>No Storage:</strong> Room must remain equipment-only</li>
+  </ul>
+
+  <h3>🔸 F. Recommended Equipment Arrangement</h3>
+  <pre >
++--------------------------------------------------+
+|  Test Header                                     |
+|  [Wall-Mounted]                                  |
+|                                                  |
+|  Diesel Pump    Electric Pump    Jockey Pump     |
+|  [on skid]       [on skid]        [on base]      |
+|                                                  |
+|  Controller Panel        Batteries               |
+|  [Wall-Mounted]          [In vented cabinet]     |
+|                                                  |
+|  Vent Grills / Exhaust Fan →                     |
++--------------------------------------------------+
+  </pre>
+  <p>🔧 Tip: Wall-mount as much as possible to keep floors accessible for cleaning and drainage.</p>
+
+  <h3>🔸 G. Drainage Considerations</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Feature</th><th>Standard</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Floor slope</td><td>1:100 gradient to floor drain</td></tr>
+      <tr><td>Drain size</td><td>Minimum 100 mm dia. pipe</td></tr>
+      <tr><td>Oil separator</td><td>Recommended with diesel engine</td></tr>
+      <tr><td>Sump pit</td><td>Optional with auto pump out</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔍 Lokesh’s On-Site Checklist:</h3>
+  <ul>
+    <li>✅ Pump skids fully anchored</li>
+    <li>✅ No tools/material stored inside room</li>
+    <li>✅ Diesel exhaust duct insulated and exits outside</li>
+    <li>✅ Control panel labeled and has updated wiring diagram</li>
+    <li>✅ Floor is dry, non-slippery, and sloped to working drain</li>
+    <li>✅ Clear access to the room at all times</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Room Layout</p>
+</section>
+
+<section id="section20" data-aos="fade-up">
+  <h2>🔥 Section 20: Fire Pump Commissioning – Procedures, Tests, and Approvals</h2>
+  <p>Commissioning validates the fire pump system under real operating conditions. It ensures all components perform according to design and code requirements.</p>
+
+  <h3>🔸 A. Pre-Commissioning Checklist</h3>
+  <ul>
+    <li>✅ Electrical connections complete and labeled</li>
+    <li>✅ Diesel tank ≥ 90% full, battery charged</li>
+    <li>✅ Suction pipe filled and air-free</li>
+    <li>✅ Valves in correct open/closed position</li>
+    <li>✅ Jockey pump tested and functional</li>
+    <li>✅ Gauges calibrated</li>
+    <li>✅ Test header accessible</li>
+    <li>✅ Drainage clear and working</li>
+    <li>✅ Alarm system connected and tested</li>
+    <li>✅ Controller in AUTO mode</li>
+  </ul>
+
+  <h3>🔸 B. Commissioning Procedure – Step-by-Step</h3>
+  <ul>
+    <li><strong>1. Visual Inspection:</strong> Check alignment, grouting, wiring, leaks.</li>
+    <li><strong>2. Dry Run:</strong> 
+      <ul>
+        <li>Electric pump: ON for 2–3 sec, verify direction.</li>
+        <li>Diesel: Crank, monitor oil pressure, RPM.</li>
+      </ul>
+    </li>
+    <li><strong>3. Wet Run (With Discharge):</strong></li>
+  </ul>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Pump Type</th><th>Duration</th><th>Parameters to Monitor</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Jockey Pump</td><td>5 min</td><td>Pressure ON/OFF range</td></tr>
+      <tr><td>Main Fire Pump</td><td>15–30 min</td><td>Pressure, flow, current, vibration</td></tr>
+      <tr><td>Diesel Pump</td><td>30 min</td><td>Oil pressure, RPM, temperature</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 C. Performance Testing</h3>
+  <p><strong>Flow Formula:</strong></p>
+  <pre>
+Q = 29.84 × C<sub>d</sub> × d² × √P
+
+Where:
+Q = Flow (GPM)
+C<sub>d</sub> = Discharge coefficient (~0.9)
+d = Nozzle diameter (inches)
+P = Pitot pressure (psi)
+  </pre>
+  <p><strong>Test Points:</strong> 100% flow, 150% overload flow, shutoff pressure</p>
+  <p>✅ Match readings to manufacturer pump curve</p>
+
+  <h3>🔸 D. Controller Test</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Test</th><th>Method</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Manual Start</td><td>Press START on panel</td></tr>
+      <tr><td>Auto Start (low pressure)</td><td>Open drain/test valve</td></tr>
+      <tr><td>Battery Fail</td><td>Disconnect one battery</td></tr>
+      <tr><td>Alarm Trigger</td><td>Manually short low-pressure sensor</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 E. Diesel Engine Tests</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Parameter</th><th>Acceptable Value</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Oil Pressure</td><td>≥ 2.5 bar within 10 sec</td></tr>
+      <tr><td>Coolant Temperature</td><td>≤ 95°C</td></tr>
+      <tr><td>Battery Voltage</td><td>13.5–14.5 V while charging</td></tr>
+      <tr><td>Engine RPM</td><td>As per design (e.g., 1800 rpm)</td></tr>
+      <tr><td>Auto Shutdown</td><td>Test by disconnecting sensor wire</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 F. Documentation & Approvals</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Form / Document</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Pre-start checklist</td><td>Confirms system readiness</td></tr>
+      <tr><td>Flow test report</td><td>Performance validation</td></tr>
+      <tr><td>Pump curve comparison</td><td>Compliance verification</td></tr>
+      <tr><td>Battery log</td><td>Battery performance record</td></tr>
+      <tr><td>Controller test sheet</td><td>Alarms and auto/manual checks</td></tr>
+      <tr><td>Engineer certificate</td><td>Licensed sign-off</td></tr>
+      <tr><td>AHJ inspection record</td><td>Jurisdictional approval</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 G. Final Handover</h3>
+  <ul>
+    <li>📦 Provide: O&M manual, pump curve, electrical SLD</li>
+    <li>👨‍🏫 Train maintenance team on pump operation</li>
+    <li>🏷️ Tag all valves and switches</li>
+    <li>🗂️ Submit commissioning records</li>
+    <li>📆 Label pump with commissioning date</li>
+  </ul>
+
+  <h3>🔍 Lokesh’s Tips for Smooth Commissioning:</h3>
+  <ul>
+    <li>✅ Keep spare fuses, diesel, and multimeter nearby</li>
+    <li>✅ Take photo evidence of gauge readings</li>
+    <li>✅ Confirm motor rotation direction before wet test</li>
+    <li>✅ Simulate power loss to validate diesel backup</li>
+    <li>✅ Use IR thermometer for engine checks</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Commissioning</p>
+</section>
+
+ <section id="section21" data-aos="fade-left">
+  <h2>🔥 Section 21: Fire Pump Maintenance – Weekly, Monthly, and Annual Tasks with Log Format</h2>
+  <p>A fire pump’s readiness depends on consistent, documented maintenance. This section provides frequency-based schedules, task notes, and logbook examples per NFPA 25 & IS 15301.</p>
+
+  <h3>🔸 A. Maintenance Frequency Overview</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Task Type</th><th>Frequency</th><th>Who Can Perform</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Visual Inspection</td><td>Daily</td><td>Operator</td></tr>
+      <tr><td>Weekly Tests</td><td>Every 7 days</td><td>Trained technician</td></tr>
+      <tr><td>Monthly Checks</td><td>Monthly</td><td>Technician / Engineer</td></tr>
+      <tr><td>Quarterly Testing</td><td>Every 3 months</td><td>Facility Engineer</td></tr>
+      <tr><td>Annual Overhaul</td><td>Yearly</td><td>OEM / Authorized Dealer</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 B. Weekly Maintenance Tasks</h3>
+  <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse;">
+    <thead style="background:#eee;">
+      <tr><th>Task</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Start electric fire pump</td><td>Run for 10 minutes</td></tr>
+      <tr><td>Start diesel pump</td><td>Check RPM, temp, oil pressure</td></tr>
+      <tr><td>Check battery voltage</td><td>≥12.5V idle / 13.5–14.5V running</td></tr>
+      <tr><td>Verify jockey pump</td><td>Auto pressure range check</td></tr>
+      <tr><td>Inspect gauges</td><td>No leaks or needle flutter</td></tr>
+      <tr><td>Drain relief/test line</td><td>Ensure clear path</td></tr>
+      <tr><td>Controller check</td><td>Must be in AUTO</td></tr>
+    </tbody>
+  </table>
+
+  <h3>🔸 C. Monthly Maintenance Tasks</h3>
+  <ul>
+    <li>🔲 Clean battery terminals, apply petroleum jelly</li>
+    <li>🔲 Fuel level ≥ 2/3 in diesel tank</li>
+    <li>🔲 Lubricate pump coupling (as per OEM)</li>
+    <li>🔲 Inspect diesel belts and tension</li>
+    <li>🔲 Record amperage with clamp meter</li>
+    <li>🔲 Check exhaust insulation and discoloration</li>
+    <li>🔲 Simulate sensor alarms</li>
+  </ul>
+
+  <h3>🔸 D. Quarterly Maintenance Tasks</h3>
+  <ul>
+    <li>🔲 Compare flow readings with pump curve</li>
+    <li>🔲 Flush diesel fuel sediment</li>
+    <li>🔲 Clean inside panel enclosure</li>
+    <li>🔲 Replace worn vibration isolators</li>
+    <li>🔲 Exercise all valves fully</li>
+    <li>🔲 Update all tags, logs, and records</li>
+  </ul>
+
+  <h3>🔸 E. Annual Maintenance Tasks</h3>
+  <ul>
+    <li>🔲 Overhaul diesel engine (OEM service)</li>
+    <li>🔲 Replace oil and filters</li>
+    <li>🔲 Calibrate pressure switches with master gauge</li>
+    <li>🔲 Replace 2+ year old batteries</li>
+    <li>🔲 Conduct full flow performance test</li>
+    <li>🔲 Paint and remove surface rust</li>
+    <li>🔲 Test motor winding insulation (≥1 MΩ)</li>
+  </ul>
+
+  <h3>🔸 F. Fire Pump Maintenance Log Format</h3>
+
+  <h4>📋 Weekly Maintenance Log</h4>
+  <pre >
+------------------------------------------------------------------
+| Date     | Operator Name | Pump Run Time | Battery V | Remarks |
+|----------|----------------|----------------|-----------|-------|
+| 13/06/25 | Lokesh Kumar   | 10 min         | 13.4 V    | OK    |
+------------------------------------------------------------------
+  </pre>
+
+  <h4>📋 Monthly Maintenance Check Log</h4>
+  <pre >
+-----------------------------------------------------------------------------
+| Date     | Diesel Level | Oil Level | RPM | Coupling | Alarm Test | Sign  |
+|----------|--------------|-----------|-----|----------|-------------|------|
+| 13/06/25 | 85%          | Normal    |1800 | OK       | Working     | L.K. |
+-----------------------------------------------------------------------------
+  </pre>
+
+  <h4>📋 Annual Flow Performance Test Log</h4>
+  <pre>
+----------------------------------------------------------------------------------------
+| Date     | Flow (LPM) | Pressure (Bar) | Motor Amp | RPM | Tested By | Comparison OK |
+|----------|------------|----------------|-----------|-----|------------|--------------|
+| 13/06/25 | 2280       | 7.2            | 42 A      |1800 | Lokesh     | Yes          |
+----------------------------------------------------------------------------------------
+  </pre>
+
+  <h3>🔍 Lokesh’s Pro Tips for Maintenance</h3>
+  <ul>
+    <li>✅ Laminate weekly checklists and mount on control panel</li>
+    <li>✅ Use color-coded tags to indicate “Next Due” checks</li>
+    <li>✅ Photograph gauge readings and store digitally</li>
+    <li>✅ Stock spare: fuses, relays, filters, diesel belts</li>
+    <li>✅ Run manually if pump hasn't started for 30 days</li>
+  </ul>
+
+  <p style="margin-top:40px; font-weight:bold; color:#888;">Section: Fire Pump Maintenance & Logs</p>
+</section>
+
+    <!-- Continue by copying all remaining section content -->
+  </main>
+    <button id="scrollToTop" title="Back to top">↑</button>
+  </div>
+   <footer>
+    <p>&copy; 2025 Fire Pump System Guide • Developed by Lokesh</p>
+  </footer>
+ 
+
+  <script>
+    // Scroll-to-top button
+    const btn = document.getElementById('scrollToTop');
+    window.addEventListener('scroll', () => {
+      btn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+    });
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Highlight active section in sidebar
+    const links = document.querySelectorAll('#sidebar a');
+    const sections = document.querySelectorAll('main section');
+    window.addEventListener('scroll', () => {
+      let fromTop = window.scrollY + 150;
+      sections.forEach(sec => {
+        if (sec.offsetTop <= fromTop && sec.offsetTop + sec.offsetHeight > fromTop) {
+          links.forEach(a => a.classList.remove('active'));
+          const id = sec.getAttribute('id');
+          const link = document.querySelector('#sidebar a[href="#' + id + '"]');
+          if (link) link.classList.add('active');
+        }
+      });
+    });
+  </script>
+  
+  <script>
+  const toggleBtn = document.getElementById('menuToggle');
+  const sidebar = document.getElementById('sidebar');
+
+ toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+  document.body.classList.toggle('sidebar-open');
+});
+</script>
+<!-- CHAT-BOT SCRIPT -->
+</body>
+</html>
